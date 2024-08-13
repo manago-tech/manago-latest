@@ -2,14 +2,14 @@ import React from 'react';
 
 export default function About() {
   return (
-    <div className="flex flex-col md:flex-row mx-10 md:mx-36 my-14 md:my-28 ">
-      <div className="flex flex-col md:w-1/2 p-3 gap-3">
+    <div className="flex flex-col lg:flex-row mx-10 md:mx-36 my-14 md:my-20 ">
+      <div className="flex flex-col lg:w-1/2 p-3 gap-3">
       <p className="text-xs ">
         ABOUT US
         </p>
         <h1 className="marcellus text-2xl sm:text-4xl font-light">Redefining Hospitality with Innovation and Integration</h1>
       </div>
-      <div className="flex flex-col gap-3 md:w-1/2 p-3 sm:pt-10">
+      <div className="flex flex-col gap-3 lg:w-1/2 p-3 sm:pt-10">
         <p className="text-xs leading-6 sm:text-sm">
           Manago is a team of F&B experts who act as personal managers, helping you set up restaurants, cafes, or hotels. We provide comprehensive consulting services, from concept to launch, including in-house services. Our all-in-one approach saves time and capital, ensuring a well-planned and budget-friendly setup.
         </p>
