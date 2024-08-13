@@ -14,6 +14,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/updatedCarousel";
+
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import Link from "next/link";
 
