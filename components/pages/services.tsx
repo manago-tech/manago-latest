@@ -9,9 +9,11 @@ import {
 } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaInstagramSquare } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
+import { PiInstagramLogoFill } from "react-icons/pi";
 
 import Img1 from "@/assets/services/card_1.png";
+import star from "@/assets/star.svg";
 
 const cardData = [
   {
@@ -22,6 +24,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Licensing",
@@ -31,6 +34,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Interior",
@@ -40,6 +44,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Sign Board",
@@ -49,6 +54,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Kitchen Equipment",
@@ -58,6 +64,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Furniture",
@@ -67,6 +74,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Manpower",
@@ -76,6 +84,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
   {
     title: "Uniform",
@@ -85,6 +94,7 @@ const cardData = [
       facebook: "#",
       instagram: "#",
     },
+    image: Img1, // Add image object here
   },
 ];
 
@@ -92,7 +102,16 @@ export default function Services() {
   return (
     <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
       <div className="flex flex-col p-3 gap-3 w-full">
-        <p className="text-xs text-center">OUR SERVICES</p>
+        {/* <p className="text-xs text-center">OUR SERVICES</p> */}
+        <div className="flex flex-row text-xs justify-center">
+          <span>
+            <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
+          </span>
+          <p>OUR SERVICES</p>
+          <span>
+            <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
+          </span>
+        </div>
         <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
           Tailored Solutions for Every Hospitality Need
         </h1>
@@ -103,7 +122,7 @@ export default function Services() {
             <CardHeader className="p-0">
               <CardTitle>
                 <img
-                  src={Img1.src}
+                  src={card.image.src}
                   className="w-full h-full"
                   alt="Card Image"
                 />
@@ -111,25 +130,25 @@ export default function Services() {
             </CardHeader>
             <CardContent className="p-0">
               <div className="flex justify-between items-center mt-4 mb-2">
-                <p className="text-2xl marcellus">{card.title}</p>
-                <div className="hidden md:flex space-x-2">
+                <p className="text-2xl text-[23px] marcellus">{card.title}</p>
+                <div className="hidden md:flex space-x-2 items-center">
                   <Link href={card.links.facebook} passHref>
-                    <FaFacebook className="text-xl" />
+                    <ImFacebook2 className="text-xl" />
                   </Link>
                   <Link href={card.links.instagram} passHref>
-                    <FaInstagramSquare className="text-xl rounded-full" />
+                    <PiInstagramLogoFill className="text-2xl" />
                   </Link>
                 </div>
               </div>
               <p className="text-xs leading-relaxed">{card.content}</p>
             </CardContent>
             <CardFooter className="p-0 pt-2">
-              <div className="flex md:hidden space-x-2">
+              <div className="flex md:hidden space-x-2 items-center">
                 <Link href={card.links.facebook} passHref>
-                  <FaFacebook className="text-xl" />
+                  <ImFacebook2 className="text-xl hover:text-[#1877F2]" />
                 </Link>
                 <Link href={card.links.instagram} passHref>
-                  <FaInstagramSquare className="text-xl rounded-full" />
+                  <PiInstagramLogoFill className="text-2xl " />
                 </Link>
               </div>
             </CardFooter>

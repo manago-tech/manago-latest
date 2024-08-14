@@ -20,15 +20,15 @@ function classNames(...classes: (string | boolean | undefined)[]): string {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-transparent">
+        <Disclosure as="nav" className="bg-transparent z-[100]">
             <div className="mx-auto max-6-xl lg:max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-24 items-center justify-between">
                     <div className="flex items-center justify-between lg:items-stretch w-full">
                         <div className="flex flex-shrink-0 items-center justify-start ">
-                            <Image src={logo.src} alt="logo" className='' width={60} height={60} />
+                            <Image src={logo.src} alt="logo" className='' width={70} height={70} />
                         </div>
-                        <div className="hidden lg:ml-6 lg:block">
-                            <div className="flex space-x-2">
+                        <div className="hidden lg:ml-6 lg:block ">
+                            <div className="flex space-x-2 items-center h-full justify-center">
                                 {navigation.map((item) => (
                                     <a
                                         key={item.name}
@@ -36,7 +36,7 @@ export default function Example() {
                                         aria-current={item.current ? 'page' : undefined}
                                         className={classNames(
                                             item.current ? 'bg-gray-900 text-white' : 
-                                            'text-sm font-normal text-white  hover:bg-black',
+                                            'text-sm font-normal text-white hover:text-[#bcbcbc]',
                                             'rounded-md px-2 py-2',
                                         )}>
                                         {item.name}
@@ -48,7 +48,7 @@ export default function Example() {
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
                         {/* Mobile menu button */}
-                        <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-500 bg-transparent border-none hover:border-none hover:bg-yellow-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                        <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:text-[#bcbcbc] bg-transparent border-none hover:border-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#bcbcbc]">
                             <span className="absolute -inset-0.5" />
                             <span className="sr-only">Open main menu</span>
                             <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -58,7 +58,7 @@ export default function Example() {
                 </div>
             </div>
 
-            <DisclosurePanel className="lg:hidden absolute w-full bg-white/60 z-10">
+            <DisclosurePanel className="lg:hidden absolute w-full bg-white/15 z-10">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     {navigation.map((item) => (
                         <DisclosureButton
@@ -67,7 +67,7 @@ export default function Example() {
                             href={item.href}
                             aria-current={item.current ? 'page' : undefined}
                             className={classNames(
-                                item.current ? 'bg-gray-900 text-white' : 'text-sm font-bold text-black hover:text-yellow-500 hover:bg-black',
+                                item.current ? 'bg-gray-900 text-white' : 'text-sm font-bold text-white hover:text-[#bcbcbc]',
                                 'block rounded-md px-3 py-2 text-base font-medium',
                             )}
                         >

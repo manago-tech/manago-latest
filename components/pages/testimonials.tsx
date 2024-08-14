@@ -16,12 +16,22 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Img1 from "@/assets/testimonials/test_1.png";
+import star from "@/assets/star.svg";
 
 export default function Testimonials() {
   return (
     <div className="flex flex-col mx-14 md:mx-36 my-14 md:my-20">
       <div className="flex flex-col p-3 gap-3 w-full">
-        <p className="text-xs text-center">TESTIMONIALS</p>
+        {/* <p className="text-xs text-center">TESTIMONIALS</p> */}
+        <div className="flex flex-row text-xs justify-center">
+          <span>
+            <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
+          </span>
+          <p>TESTIMONIALS</p>
+          <span>
+            <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
+          </span>
+        </div>
         <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
           Client Experiences and Endorsements
         </h1>

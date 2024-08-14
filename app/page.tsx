@@ -4,6 +4,7 @@ import Services from "@/components/pages/services";
 import Testimonials from "@/components/pages/testimonials";
 import Team from "@/components/pages/team";
 import Success from "@/components/pages/success";
+import Footer from "@/components/pages/footer";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Separator className="max-w-lg" />
       </div>
       <Success />
+      <Footer />
     </main>
   );
 }
