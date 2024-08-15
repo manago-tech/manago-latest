@@ -63,7 +63,9 @@ export function TeamSuccess() {
                 >
                   <CardHeader className="p-0">
                     <CardTitle>
-                      <img src={Img1.src} className="w-full" alt="Card Image" />
+                      <div className="overflow-hidden">
+                      <img src={Img1.src} className="w-full transform transition duration-500 hover:scale-110" alt="Card Image" />
+                      </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="p-0">
