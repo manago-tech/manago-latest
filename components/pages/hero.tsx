@@ -16,12 +16,14 @@ export default function Hero() {
       }}
     >
       {/* <div className='absolute z-[1] md:top-[-450px] md:left-[-450px] md:w-[780px] md:h-[780px] top-[-225px] left-[-225px] w-[390px] h-[390px] bg-gradient-to-tl from-white to-[#00C062] rounded-full blur-[100px]'></div> */}
-      <div className="absolute z-[1] top-0 left-0 w-full h-[200px] md:h-[150px] bg-gradient-to-b from-black via-black to-gray-900 blur-[100px]"></div>
+      <div className="absolute z-[1] md:block hidden  top-0 left-0 w-full h-[200px] md:h-[150px] bg-gradient-to-b from-black via-black to-gray-900 blur-[100px]"></div>
+      <div className="absolute z-[1] md:hidden block w-full h-full bg-gradient-to-b from-black/60 via-black/60 to-black/60 blur-[100px]"></div>
+
       <Navbar />
       <div className="w-full text-white h-[100vh] lg:max-w-7xl mx-auto">
         <div className="flex items-end justify-start h-full px-10 pb-28 md:pb-40">
           <div className="relative ">
-            <div className="absolute z-[1] w-full  h-[40vh] sm:h-[37vh] bg-gradient-to-t from-black/80 via-black/80 to-black/80 blur-lg "></div>
+            <div className="absolute hidden md:block  z-[1] w-full  h-[40vh] sm:h-[37vh] bg-gradient-to-t from-black/80 via-black/80 to-black/80 blur-lg "></div>
 
             <div className="relative z-[10] flex flex-col gap-6">
               <p
