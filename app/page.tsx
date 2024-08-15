@@ -9,7 +9,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen overflow-x-hidden flex-col">
       <Hero />
       <About />
       <div className="flex justify-center">
