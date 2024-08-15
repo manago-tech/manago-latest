@@ -22,7 +22,11 @@ import { SiLinkedin } from "react-icons/si";
 import { ImFacebook2 } from "react-icons/im";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
-import Img1 from "@/assets/team/team_1.png";
+import Team1 from "@/assets/team/arihant.jpg";
+import Team2 from "@/assets/team/prakash.jpg";
+import Team3 from "@/assets/team/team-3.jpg";
+import Team4 from "@/assets/team/team-4.jpg";
+import Team5 from "@/assets/team/sheetal.jpeg";
 
 export default function Team() {
   return (
@@ -121,7 +125,13 @@ export function Testimonial() {
                 >
                   <CardHeader className="p-0">
                     <CardTitle>
-                      <img src={Img1.src} className="w-full" alt="Card Image" />
+                      <div className="max-h-[22rem] overflow-hidden">
+                        <img
+                          src={card.image.src}
+                          className="w-full h-full  transform transition duration-500 hover:scale-110"
+                          alt="Card Image"
+                        />
+                      </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="p-0">
@@ -160,13 +170,23 @@ const cardData = [
     links: {
       linkedin: "#",
     },
+    image: Team1,
   },
   {
     name: "Prakash Bagra",
-    title: "Licensing & Finance",
+    title: "Equipment Furniture & Machinery",
     links: {
       linkedin: "#",
     },
+    image: Team2,
+  },
+  {
+    name: "Prasanna Sankhala",
+    title: "Human Resources (HR)",
+    links: {
+      linkedin: "https://www.linkedin.com/in/prasanna-sankhala-0000001b0/",
+    },
+    image: Team3,
   },
   {
     name: "Satya Prakash Singh",
@@ -174,13 +194,7 @@ const cardData = [
     links: {
       linkedin: "#",
     },
-  },
-  {
-    name: "Arihant Jain",
-    title: "Licensing & Finance",
-    links: {
-      linkedin: "#",
-    },
+    image: Team4,
   },
   {
     name: "Sheetal Mishra",
@@ -188,12 +202,14 @@ const cardData = [
     links: {
       linkedin: "#",
     },
+    image: Team5,
   },
-  {
-    name: "Arihant Jain",
-    title: "Licensing & Finance",
-    links: {
-      linkedin: "#",
-    },
-  },
+  // {
+  //   name: "Arihant Jain",
+  //   title: "Licensing & Finance",
+  //   links: {
+  //     linkedin: "#",
+  //   },
+  //   image: Img1,
+  // },
 ];

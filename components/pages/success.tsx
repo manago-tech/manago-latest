@@ -102,20 +102,20 @@ const cardData = [
     title: "Winner of",
     content: "Food Connoisseurs India Awards 2023 South India Edition",
   },
-  {
-    title: "Winner of",
-    content: "Food Connoisseurs India Awards 2023 South India Edition",
-  },
-  {
-    title: "Winner of",
-    content: "Food Connoisseurs India Awards 2023 South India Edition",
-  },
-  {
-    title: "Winner of",
-    content: "Food Connoisseurs India Awards 2023 South India Edition",
-  },
-  {
-    title: "Winner of",
-    content: "Food Connoisseurs India Awards 2023 South India Edition",
-  },
+  // {
+  //   title: "Winner of",
+  //   content: "Food Connoisseurs India Awards 2023 South India Edition",
+  // },
+  // {
+  //   title: "Winner of",
+  //   content: "Food Connoisseurs India Awards 2023 South India Edition",
+  // },
+  // {
+  //   title: "Winner of",
+  //   content: "Food Connoisseurs India Awards 2023 South India Edition",
+  // },
+  // {
+  //   title: "Winner of",
+  //   content: "Food Connoisseurs India Awards 2023 South India Edition",
+  // },
 ];

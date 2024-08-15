@@ -12,8 +12,15 @@ import Link from "next/link";
 import { ImFacebook2 } from "react-icons/im";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
-import Img1 from "@/assets/services/card_1.png";
 import star from "@/assets/star.svg";
+import card1 from "@/assets/services/card-1.png";
+import card2 from "@/assets/services/card-2.png";
+import card3 from "@/assets/services/card-3.png";
+import card4 from "@/assets/services/card-4.png";
+import card5 from "@/assets/services/card-5.png";
+import card6 from "@/assets/services/card-6.png";
+import card7 from "@/assets/services/card-7.png";
+import card8 from "@/assets/services/card-8.png";
 
 const cardData = [
   {
@@ -21,80 +28,80 @@ const cardData = [
     content:
       "Your Trusted Partner in F&B and Real Estate Expansion, facilitating seamless franchise distribution and property rentals.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/share/M5gDvatPHcMso15K/?mibextid=qi2Omg",
+      instagram: "https://www.instagram.com/managorestostatebangalore/",
     },
-    image: Img1, // Add image object here
+    image: card1, // Add image object here
   },
   {
     title: "Licensing",
     content:
       "Comprehensive licensing, accounting, and compliance solutions for the hospitality sector.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/Managofoodlicenseservice",
+      instagram: "https://www.instagram.com/manago_food_license_services",
     },
-    image: Img1, // Add image object here
+    image: card2, // Add image object here
   },
   {
     title: "Interior",
     content:
       "Transforming culinary visions into reality with bespoke interior design and construction services.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/Managocarft",
+      instagram: "https://www.instagram.com/manago_craft?igsh=OTZyNXIyZGU0aG9p",
     },
-    image: Img1, // Add image object here
+    image: card3, // Add image object here
   },
   {
     title: "Sign Board",
     content:
       "Crafting eye-catching LED sign boards to elevate your establishment's visual appeal.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/Managosignboard/",
+      instagram: "https://www.instagram.com/manago_sign_board/",
     },
-    image: Img1, // Add image object here
+    image: card4, // Add image object here
   },
   {
     title: "Kitchen Equipment",
     content:
       "Providing high-quality new and refurbished kitchen equipment tailored for commercial kitchens.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=61564445605166",
+      instagram: "https://www.instagram.com/manago_kitchen_equipment/",
     },
-    image: Img1, // Add image object here
+    image: card5, // Add image object here
   },
   {
     title: "Furniture",
     content:
       "Elegant and functional hospitality furniture designed to enhance guest experiences.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=61564143996284",
+      instagram: "https://www.instagram.com/manago_furniture_service/",
     },
-    image: Img1, // Add image object here
+    image: card6, // Add image object here
   },
   {
     title: "Manpower",
     content:
       "Supplying skilled manpower to drive excellence across Bangalore's hospitality industry.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=61564163493455&sk=about",
+      instagram: "https://www.instagram.com/manago_manpower/",
     },
-    image: Img1, // Add image object here
+    image: card7, // Add image object here
   },
   {
     title: "Uniform",
     content:
       "Custom-designed uniforms that combine functionality with style, enhancing your brand identity.",
     links: {
-      facebook: "#",
-      instagram: "#",
+      facebook: "https://www.facebook.com/profile.php?id=61564438075530",
+      instagram: "#", // No Instagram link provided
     },
-    image: Img1, // Add image object here
+    image: card8, 
   },
 ];
 
@@ -121,11 +128,13 @@ export default function Services() {
           <Card key={index} className="border-none shadow-none mt-10 mx-2">
             <CardHeader className="p-0">
               <CardTitle>
-                <img
-                  src={card.image.src}
-                  className="w-full h-full"
-                  alt="Card Image"
-                />
+                <div className="overflow-hidden">
+                  <img
+                    src={card.image.src}
+                    className="w-full h-full transform transition duration-500 hover:scale-110"
+                    alt="Card Image"
+                  />
+                </div>
               </CardTitle>
             </CardHeader>
             <CardContent className="p-0">
