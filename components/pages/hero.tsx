@@ -34,7 +34,7 @@ export default function Hero() {
                 FOR BANGALORE HOTELIERS
               </p>
               <p
-                className="text-white text-xs max-w-xl md:text-base "
+                className="text-white text-xs max-w-xl md:text-base"
                 style={{ lineHeight: "25px" }}
               >
                 Empowering Hospitality Businesses with Comprehensive Solutions,

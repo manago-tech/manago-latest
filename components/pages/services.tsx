@@ -28,7 +28,8 @@ const cardData = [
     content:
       "Your Trusted Partner in F&B and Real Estate Expansion, facilitating seamless franchise distribution and property rentals.",
     links: {
-      facebook: "https://www.facebook.com/share/M5gDvatPHcMso15K/?mibextid=qi2Omg",
+      facebook:
+        "https://www.facebook.com/share/M5gDvatPHcMso15K/?mibextid=qi2Omg",
       instagram: "https://www.instagram.com/managorestostatebangalore/",
     },
     image: card1, // Add image object here
@@ -88,7 +89,8 @@ const cardData = [
     content:
       "Supplying skilled manpower to drive excellence across Bangalore's hospitality industry.",
     links: {
-      facebook: "https://www.facebook.com/profile.php?id=61564163493455&sk=about",
+      facebook:
+        "https://www.facebook.com/profile.php?id=61564163493455&sk=about",
       instagram: "https://www.instagram.com/manago_manpower/",
     },
     image: card7, // Add image object here
@@ -101,68 +103,70 @@ const cardData = [
       facebook: "https://www.facebook.com/profile.php?id=61564438075530",
       instagram: "#", // No Instagram link provided
     },
-    image: card8, 
+    image: card8,
   },
 ];
 
 export default function Services() {
   return (
-    <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
-      <div className="flex flex-col p-3 gap-3 w-full">
-        {/* <p className="text-xs text-center">OUR SERVICES</p> */}
-        <div className="flex flex-row text-xs justify-center">
-          <span>
-            <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
-          </span>
-          <p>OUR SERVICES</p>
-          <span>
-            <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
-          </span>
+    <div id="services">
+      <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
+        <div className="flex flex-col p-3 gap-3 w-full">
+          {/* <p className="text-xs text-center">OUR SERVICES</p> */}
+          <div className="flex flex-row text-xs justify-center">
+            <span>
+              <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
+            </span>
+            <p>OUR SERVICES</p>
+            <span>
+              <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
+            </span>
+          </div>
+          <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
+            Tailored Solutions for Every Hospitality Need
+          </h1>
         </div>
-        <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
-          Tailored Solutions for Every Hospitality Need
-        </h1>
-      </div>
-      <div className="grid  grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {cardData.map((card, index) => (
-          <Card key={index} className="border-none shadow-none mt-10 mx-2">
-            <CardHeader className="p-0">
-              <CardTitle>
-                <div className="overflow-hidden">
-                  <img
-                    src={card.image.src}
-                    className="w-full h-full transform transition duration-500 hover:scale-110"
-                    alt="Card Image"
-                  />
+        <div className="grid  grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+          {cardData.map((card, index) => (
+            <Card key={index} className="border-none shadow-none mt-10 mx-2">
+              <CardHeader className="p-0">
+                <CardTitle>
+                  <div className="overflow-hidden">
+                    <img
+                      src={card.image.src}
+                      className="w-full h-full transform transition duration-500 hover:scale-110"
+                      alt="Card Image"
+                    />
+                  </div>
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <div className="flex justify-between items-center mt-4 mb-2">
+                  <p className="text-2xl text-[23px] marcellus">{card.title}</p>
+                  <div className="hidden md:flex space-x-2 items-center">
+                    <Link href={card.links.facebook} passHref>
+                      <ImFacebook2 className="text-xl" />
+                    </Link>
+                    <Link href={card.links.instagram} passHref>
+                      <PiInstagramLogoFill className="text-2xl" />
+                    </Link>
+                  </div>
                 </div>
-              </CardTitle>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="flex justify-between items-center mt-4 mb-2">
-                <p className="text-2xl text-[23px] marcellus">{card.title}</p>
-                <div className="hidden md:flex space-x-2 items-center">
+                <p className="text-xs leading-relaxed">{card.content}</p>
+              </CardContent>
+              <CardFooter className="p-0 pt-2">
+                <div className="flex md:hidden space-x-2 items-center">
                   <Link href={card.links.facebook} passHref>
-                    <ImFacebook2 className="text-xl" />
+                    <ImFacebook2 className="text-xl hover:text-[#1877F2]" />
                   </Link>
                   <Link href={card.links.instagram} passHref>
-                    <PiInstagramLogoFill className="text-2xl" />
+                    <PiInstagramLogoFill className="text-2xl " />
                   </Link>
                 </div>
-              </div>
-              <p className="text-xs leading-relaxed">{card.content}</p>
-            </CardContent>
-            <CardFooter className="p-0 pt-2">
-              <div className="flex md:hidden space-x-2 items-center">
-                <Link href={card.links.facebook} passHref>
-                  <ImFacebook2 className="text-xl hover:text-[#1877F2]" />
-                </Link>
-                <Link href={card.links.instagram} passHref>
-                  <PiInstagramLogoFill className="text-2xl " />
-                </Link>
-              </div>
-            </CardFooter>
-          </Card>
-        ))}
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );

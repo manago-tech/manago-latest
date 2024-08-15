@@ -65,52 +65,58 @@ export function CarouselDApiDemo() {
   }, [api]);
 
   return (
-    <div className="flex w-full flex-col ">
-      <Carousel setApi={setApi} className="w-full max-w-4xl mx-auto">
-        <CarouselContent>
-          {/* {Array.from({ length: 5 }).map((_, index) => ( */}
-          {cardData.map((card, index) => (
-            <CarouselItem key={index}>
-              {/* <Card>
+    <div id="testimonials">
+      <div className="flex w-full flex-col ">
+        <Carousel setApi={setApi} className="w-full max-w-4xl mx-auto">
+          <CarouselContent>
+            {/* {Array.from({ length: 5 }).map((_, index) => ( */}
+            {cardData.map((card, index) => (
+              <CarouselItem key={index}>
+                {/* <Card>
                 <CardContent className="flex  items-center justify-center p-6">
                   <span className="text-4xl font-semibold">{index + 1}</span>
                 </CardContent>
               </Card> */}
-              <Card className="border-none shadow-none ">
-                <CardHeader className="p-0">
-                  <CardTitle>
-                <div className="overflow-hidden max-h-[28rem]">
-                    <img
-                      src={card.img.src}
-                      className="w-full h-full transform transition duration-500 hover:scale-110"
-                      alt="Card Image"
-                    />
-                  </div>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="p-0">
-                  <div className="flex items-center mt-4 mb-2 w-full">
-                    <p className="text-2xl w-full text-center marcellus">{card.title}</p>
-                  </div>
-                  <p className="text-xs pt-2 text-center leading-relaxed">{card.content}</p>
-                </CardContent>
-                <CardFooter className="p-0 pt-2"></CardFooter>
-              </Card>
-            </CarouselItem>
+                <Card className="border-none shadow-none ">
+                  <CardHeader className="p-0">
+                    <CardTitle>
+                      <div className="overflow-hidden max-h-[28rem]">
+                        <img
+                          src={card.img.src}
+                          className="w-full h-full transform transition duration-500 hover:scale-110"
+                          alt="Card Image"
+                        />
+                      </div>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0">
+                    <div className="flex items-center mt-4 mb-2 w-full">
+                      <p className="text-2xl w-full text-center marcellus">
+                        {card.title}
+                      </p>
+                    </div>
+                    <p className="text-xs pt-2 text-center leading-relaxed">
+                      {card.content}
+                    </p>
+                  </CardContent>
+                  <CardFooter className="p-0 pt-2"></CardFooter>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+        <div className="flex justify-center pt-5">
+          {Array.from({ length: count }).map((_, index) => (
+            <span
+              key={index}
+              className={`mx-1 h-3 w-3 rounded-full ${
+                current === index + 1 ? "bg-gray-500" : "bg-gray-300"
+              }`}
+            />
           ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel>
-      <div className="flex justify-center pt-5">
-        {Array.from({ length: count }).map((_, index) => (
-          <span
-            key={index}
-            className={`mx-1 h-3 w-3 rounded-full ${
-              current === index + 1 ? "bg-gray-500" : "bg-gray-300"
-            }`}
-          />
-        ))}
+        </div>
       </div>
     </div>
   );
@@ -154,4 +160,3 @@ const cardData = [
     img: Img1,
   },
 ];
-

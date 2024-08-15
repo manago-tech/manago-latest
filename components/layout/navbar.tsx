@@ -7,11 +7,11 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const navigation = [
-    { name: 'About Us', href: '#', current: false },
-    { name: 'Our Services', href: '#', current: false },
-    { name: 'Testimonials', href: '#', current: false },
-    { name: 'Our Team', href: '#', current: false },
-    { name: 'More From Manago', href: '#', current: false },
+    { name: 'About Us', href: '#about', current: false },
+    { name: 'Our Services', href: '#services', current: false },
+    { name: 'Testimonials', href: '#testimonials', current: false },
+    { name: 'Our Team', href: '#team', current: false },
+    { name: 'More From Manago', href: '#success', current: false },
 ]
 
 function classNames(...classes: (string | boolean | undefined)[]): string {

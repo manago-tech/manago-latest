@@ -31,17 +31,18 @@ import Team5 from "@/assets/team/sheetal.jpeg";
 export default function Team() {
   return (
     <>
-      <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
-        <Testimonial />
+      <div id="team">
+        <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
+          <TeamCarousel />
+        </div>
       </div>
     </>
   );
 }
 
-export function Testimonial() {
+export function TeamCarousel() {
   return (
     <div
-      id="testimonials"
       className="w-full flex flex-col "
       //   px-[2rem] md:px-[4rem] xl:px-[8.5rem]
     >
@@ -86,20 +87,20 @@ export function Testimonial() {
               <div className="md:flex hidden  flex-col max-w-sm p-3 gap-3">
                 {/* <p className="text-xs">OUR TEAM</p> */}
                 <div className="flex flex-row text-xs">
-              <span>
-                <img
-                  src={star.src}
-                  className="animate-spin-slow mr-3 w-4 h-4"
-                />
-              </span>
-              <p>OUR TEAM</p>
-              <span>
-                <img
-                  src={star.src}
-                  className="animate-spin-slow ml-3 w-4 h-4"
-                />
-              </span>
-            </div>
+                  <span>
+                    <img
+                      src={star.src}
+                      className="animate-spin-slow mr-3 w-4 h-4"
+                    />
+                  </span>
+                  <p>OUR TEAM</p>
+                  <span>
+                    <img
+                      src={star.src}
+                      className="animate-spin-slow ml-3 w-4 h-4"
+                    />
+                  </span>
+                </div>
                 <h1 className="marcellus  xl:text-4xl lg:text-3xl md:text-2xl sm:text-4xl font-light">
                   The People <br /> Behind MANAGO
                 </h1>
