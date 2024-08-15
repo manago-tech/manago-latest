@@ -23,24 +23,26 @@ import Img3 from "@/assets/testimonials/burger.jpg";
 
 export default function Testimonials() {
   return (
-    <div className="flex flex-col mx-14 md:mx-36 my-14 md:my-20">
-      <div className="flex flex-col p-3 gap-3 w-full">
-        {/* <p className="text-xs text-center">TESTIMONIALS</p> */}
-        <div className="flex flex-row text-xs justify-center">
-          <span>
-            <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
-          </span>
-          <p>TESTIMONIALS</p>
-          <span>
-            <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
-          </span>
+    <div id="testimonials">
+      <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
+        <div className="flex flex-col p-3 gap-3 w-full">
+          {/* <p className="text-xs text-center">TESTIMONIALS</p> */}
+          <div className="flex flex-row text-xs justify-center">
+            <span>
+              <img src={star.src} className="animate-spin-slow mr-3 w-4 h-4" />
+            </span>
+            <p>TESTIMONIALS</p>
+            <span>
+              <img src={star.src} className="animate-spin-slow ml-3 w-4 h-4" />
+            </span>
+          </div>
+          <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
+            Client Experiences and Endorsements
+          </h1>
         </div>
-        <h1 className="marcellus text-center text-2xl sm:text-4xl font-light">
-          Client Experiences and Endorsements
-        </h1>
-      </div>
-      <div className="w-full pt-8">
-        <CarouselDApiDemo />
+        <div className="w-full pt-3 sm:pt-8">
+          <CarouselDApiDemo />
+        </div>
       </div>
     </div>
   );
@@ -65,58 +67,54 @@ export function CarouselDApiDemo() {
   }, [api]);
 
   return (
-    <div id="testimonials">
-      <div className="flex w-full flex-col ">
-        <Carousel setApi={setApi} className="w-full max-w-4xl mx-auto">
-          <CarouselContent>
-            {/* {Array.from({ length: 5 }).map((_, index) => ( */}
-            {cardData.map((card, index) => (
-              <CarouselItem key={index}>
-                {/* <Card>
-                <CardContent className="flex  items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card> */}
-                <Card className="border-none shadow-none ">
-                  <CardHeader className="p-0">
-                    <CardTitle>
-                      <div className="overflow-hidden max-h-[28rem]">
-                        <img
-                          src={card.img.src}
-                          className="w-full h-full transform transition duration-500 hover:scale-110"
-                          alt="Card Image"
-                        />
-                      </div>
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="p-0">
-                    <div className="flex items-center mt-4 mb-2 w-full">
-                      <p className="text-2xl w-full text-center marcellus">
-                        {card.title}
-                      </p>
+    <div className="flex w-full flex-col ">
+      <Carousel setApi={setApi} className="w-full max-w-4xl mx-auto">
+        <CarouselContent>
+          {cardData.map((card, index) => (
+            <CarouselItem key={index}>
+              <Card className="border-none shadow-none ">
+                <CardHeader className="p-0">
+                  <CardTitle>
+                    <div className="overflow-hidden max-h-[28rem]">
+                      <img
+                        src={card.img.src}
+                        className="w-full h-full transform transition duration-500 hover:scale-110"
+                        alt="Card Image"
+                      />
                     </div>
-                    <p className="text-xs pt-2 text-center leading-relaxed">
-                      {card.content}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-0">
+                  <div className="flex items-center mt-4 mb-2 w-full">
+                    <p className="text-2xl w-full text-center marcellus">
+                      {card.title}
                     </p>
-                  </CardContent>
-                  <CardFooter className="p-0 pt-2"></CardFooter>
-                </Card>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-        <div className="flex justify-center pt-5">
-          {Array.from({ length: count }).map((_, index) => (
-            <span
-              key={index}
-              className={`mx-1 h-3 w-3 rounded-full ${
-                current === index + 1 ? "bg-gray-500" : "bg-gray-300"
-              }`}
-            />
+                  </div>
+                  <p className="text-xs pt-2 text-center leading-relaxed">
+                    {card.content}
+                  </p>
+                </CardContent>
+                <CardFooter className="p-0 pt-2"></CardFooter>
+              </Card>
+            </CarouselItem>
           ))}
+        </CarouselContent>
+        <div className="w-full flex items-center justify-center mt-4  ">
+          <CarouselPrevious className="mr-4" />
+          <CarouselNext />
         </div>
+        {/* <CarouselPrevious />
+          <CarouselNext /> */}
+      </Carousel>
+      <div className="flex justify-center pt-5">
+        {Array.from({ length: count }).map((_, index) => (
+          <span
+            key={index}
+            className={`mx-1 h-3 w-3 rounded-full ${
+              current === index + 1 ? "bg-gray-500" : "bg-gray-300"
+            }`}
+          />
+        ))}
       </div>
     </div>
   );

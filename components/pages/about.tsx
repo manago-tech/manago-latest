@@ -4,7 +4,7 @@ import star from "@/assets/star.svg";
 export default function About() {
   return (
     <div id="about">
-      <div className="flex flex-col lg:flex-row mx-10 md:mx-36 my-14 md:my-20 ">
+      <div className="flex flex-col lg:flex-row mx-5 md:mx-36 my-14 md:my-20 ">
         <div className="flex flex-col lg:w-1/2 p-3 gap-3">
           <div className="flex flex-row text-xs ">
             <span>

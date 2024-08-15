@@ -110,7 +110,7 @@ const cardData = [
 export default function Services() {
   return (
     <div id="services">
-      <div className="flex flex-col mx-5 md:mx-36 my-14 md:my-20">
+      <div className="flex flex-col mx-2 md:mx-36 my-14 md:my-20">
         <div className="flex flex-col p-3 gap-3 w-full">
           {/* <p className="text-xs text-center">OUR SERVICES</p> */}
           <div className="flex flex-row text-xs justify-center">
@@ -126,9 +126,9 @@ export default function Services() {
             Tailored Solutions for Every Hospitality Need
           </h1>
         </div>
-        <div className="grid  grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid  grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 sm:gap-4">
           {cardData.map((card, index) => (
-            <Card key={index} className="border-none shadow-none mt-10 mx-2">
+            <Card key={index} className="border-none shadow-none  mt-5 sm:mt-10 mx-1 sm:mx-2">
               <CardHeader className="p-0">
                 <CardTitle>
                   <div className="overflow-hidden">
@@ -141,7 +141,7 @@ export default function Services() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0">
-                <div className="flex justify-between items-center mt-4 mb-2">
+                <div className="flex justify-between items-center mt-2 sm:mt-4 mb-1 sm:mb-2">
                   <p className="text-2xl text-[23px] marcellus">{card.title}</p>
                   <div className="hidden md:flex space-x-2 items-center">
                     <Link href={card.links.facebook} passHref>

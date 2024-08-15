@@ -48,11 +48,12 @@ export default function Hero() {
                   </span>
                   WHATSAPP US
                 </Button>
-
-                <Button className="bg-transparent w-full sm:w-1/2 h-14 border text-sm border-white text-white hover:border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-black rounded-none">
-                  <Link href="#about">
-                  EXPLORE MANAGO</Link>
-                </Button>
+                
+                <Link href="#about">
+                  <Button className="bg-transparent w-full sm:w-1/2 h-14 border text-sm border-white text-white hover:border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-black rounded-none">
+                    EXPLORE MANAGO
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -122,7 +122,7 @@ export function TeamCarousel() {
               >
                 <Card
                   key={index}
-                  className="border-none shadow-none mt-10 mx-2"
+                  className="border-none shadow-none mt-3 sm:mt-10 mx-2"
                 >
                   <CardHeader className="p-0">
                     <CardTitle>
@@ -136,11 +136,11 @@ export function TeamCarousel() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="p-0">
-                    <div className="flex justify-between items-center mt-4 mb-2">
+                    <div className="flex justify-between items-center mt-2 sm:mt-4 mb-1 sm:mb-2">
                       <p className="text-xl marcellus">{card.name}</p>
                       <div className="hidden md:flex space-x-2">
                         <Link href={card.links.linkedin} passHref>
-                          <SiLinkedin className="w-6 h-6 text-[#A16262]" />
+                          <SiLinkedin className="w-6 h-6 text-black" />
                         </Link>
                       </div>
                     </div>
@@ -148,7 +148,11 @@ export function TeamCarousel() {
                   </CardContent>
 
                   <CardFooter className="p-0 pt-2">
-                    <div className="flex md:hidden space-x-2"></div>
+                    <div className="flex md:hidden space-x-2">
+                      <Link href={card.links.linkedin} passHref>
+                        <SiLinkedin className="w-4 h-4 text-black" />
+                      </Link>
+                    </div>
                   </CardFooter>
                 </Card>
               </CarouselItem>

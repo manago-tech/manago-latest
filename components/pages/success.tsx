@@ -37,7 +37,7 @@ export default function Success() {
             Snapshots of Success
           </h1>
         </div>
-        <div className="w-full pt-6">
+        <div className="w-full ">
           <TeamSuccess />
         </div>
       </div>
@@ -61,7 +61,7 @@ export function TeamSuccess() {
               >
                 <Card
                   key={index}
-                  className="border-none shadow-none mt-10 mx-2"
+                  className="border-none shadow-none mt-3 sm:mt-10 mx-2"
                 >
                   <CardHeader className="p-0">
                     <CardTitle>

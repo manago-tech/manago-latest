@@ -13,19 +13,19 @@ export default function Home() {
       <Hero />
       <About />
       <div className="flex justify-center">
-        <Separator className="max-w-lg" />
+        <Separator className="max-w-40 sm:max-w-sm md:max-w-lg" />
       </div>
       <Services />
       <div className="flex justify-center">
-        <Separator className="max-w-lg" />
+        <Separator className="max-w-40 sm:max-w-sm md:max-w-lg" />
       </div>
       <Testimonials />
       <div className="flex justify-center">
-        <Separator className="max-w-lg" />
+        <Separator className="max-w-40 sm:max-w-sm md:max-w-lg" />
       </div>
       <Team />
       <div className="flex justify-center">
-        <Separator className="max-w-lg" />
+        <Separator className="max-w-40 sm:max-w-sm md:max-w-lg" />
       </div>
       <Success />
       <Footer />
