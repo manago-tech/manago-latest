@@ -114,7 +114,7 @@ const cardData = [
     content:
       "Transforming culinary visions into reality with bespoke interior design and construction services.",
     links: {
-      facebook: "https://www.facebook.com/Managocarft",
+      facebook: "https://www.facebook.com/profile.php?id=61556113223964&mibextid=2JQ9oc",
       instagram: "https://www.instagram.com/manago_craft?igsh=OTZyNXIyZGU0aG9p",
     },
     image: card3, 
