@@ -21,7 +21,7 @@ import Img2 from "@/assets/more/more_2.png";
 export default function Success() {
   return (
     <div id="success">
-      <div className="flex flex-col mx-14 md:mx-36 my-14 md:my-20">
+      <div className="flex flex-col mx-8 md:mx-36 my-14 md:my-20">
         <div className="flex flex-col p-3 gap-3 w-full">
           {/* <p className="text-xs text-center">MORE FROM MANAGO</p> */}
           <div className="flex flex-row text-xs justify-center">
@@ -57,7 +57,7 @@ export function TeamSuccess() {
             <>
               <CarouselItem
                 key={index}
-                className="sm:ml-5 md:w-full w-80 pl-0 basis-1/1 lg:basis-1/2"
+                className="md:w-full w-80 pl-0 basis-1/1 lg:basis-1/2"
               >
                 <Card
                   key={index}

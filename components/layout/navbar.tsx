@@ -58,7 +58,7 @@ export default function Example() {
                 </div>
             </div>
 
-            <DisclosurePanel className="lg:hidden absolute w-full bg-white/15 z-10">
+            <DisclosurePanel className="lg:hidden absolute w-full bg-black/90 text-white z-10">
                 <div className="space-y-1 px-2 pb-3 pt-2">
                     {navigation.map((item) => (
                         <DisclosureButton
