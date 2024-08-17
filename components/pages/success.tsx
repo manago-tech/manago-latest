@@ -16,7 +16,7 @@ import {
 
 import star from "@/assets/star.svg";
 import Img1 from "@/assets/more/more_1.png";
-import Img2 from "@/assets/more/more_2.jpg";
+import Img2 from "@/assets/more/more_2.png";
 
 export default function Success() {
   return (
@@ -74,7 +74,7 @@ export function TeamSuccess() {
                       </div>
                     </CardTitle>
                   </CardHeader>
-                  <CardContent className="p-0">
+                  {/* <CardContent className="p-0">
                     <div className="flex justify-between items-center mt-4 mb-2">
                       <p className="text-xs ">{card.title}</p>
                       <div className="hidden md:flex space-x-2"></div>
@@ -82,7 +82,7 @@ export function TeamSuccess() {
                     <p className="text-xl marcellus leading-relaxed">
                       {card.content}
                     </p>
-                  </CardContent>
+                  </CardContent> */}
 
                   <CardFooter className="p-0 pt-2">
                     <div className="flex md:hidden space-x-2"></div>

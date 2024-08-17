@@ -41,16 +41,23 @@ export default function Hero() {
                 Skilled Manpower, and Essential Infrastructure for Unparalleled
                 Operational Excellence and Guest Satisfaction
               </p>
-              <div className="flex flex-col sm:flex-row sm:max-w-md gap-4 mt-2">
-                <Button className="bg-transparent w-full sm:w-1/2 h-14 border text-sm border-white text-white hover:border-[#25D366] hover:bg-[#25D366] hover:text-black rounded-none">
-                  <span>
-                    <FaWhatsapp className="w-6 h-6 mr-2" />
-                  </span>
-                  WHATSAPP US
-                </Button>
-                
-                <Link href="#about">
-                  <Button className="bg-transparent w-full sm:w-1/2 h-14 border text-sm border-white text-white hover:border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-black rounded-none">
+              <div className="flex flex-col sm:flex-row sm:max-w-lg gap-4 mt-2">
+                <Link
+                  href="https://wa.me/7727072790"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="w-full sm:w-1/2"
+                >
+                  <Button className="bg-transparent w-full h-14 border text-sm border-white text-white hover:border-[#25D366] hover:bg-[#25D366] hover:text-black rounded-none">
+                    <span>
+                      <FaWhatsapp className="w-6 h-6 mr-2" />
+                    </span>
+                    WHATSAPP US
+                  </Button>
+                </Link>
+
+                <Link href="#about" className="w-full sm:w-1/2">
+                  <Button className="bg-transparent w-full h-14 border text-sm border-white text-white hover:border-[#D9D9D9] hover:bg-[#D9D9D9] hover:text-black rounded-none">
                     EXPLORE MANAGO
                   </Button>
                 </Link>

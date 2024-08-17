@@ -19,7 +19,10 @@ import star from "@/assets/star.svg";
 
 import Img1 from "@/assets/testimonials/brewery.png";
 import Img2 from "@/assets/testimonials/peak.jpg";
-import Img3 from "@/assets/testimonials/burger.jpg";
+import Img3 from "@/assets/testimonials/burger.png";
+import Img4 from "@/assets/testimonials/global.png";
+import Img5 from "@/assets/testimonials/shilton.png";
+import Img6 from "@/assets/testimonials/playarena.png";
 
 export default function Testimonials() {
   return (
@@ -128,10 +131,10 @@ const cardData = [
     img: Img1,
   },
   {
-    title: "The Peak",
+    title: "The Irish House (Global Kitchen)",
     content:
-      "The Peak founder Mr. Param Shinde says “We’ve been using Manago’s services for the last couple of years now, they’ve constantly assisted us not only in our manpower requirements but also in the setting up of our upcoming F&B premises also with staff uniform. They have a highly proactive group that has gained our trust and business with their commitment to delivering what’s promised. Much needed in the tough times our industry is facing. Special thanks to Sheetal, Prakash & Sumit.",
-    img: Img2,
+      "For the past three years, Global Kitchen, a prominent figure in Bangalore's hospitality industry, has consistently relied on Manago Manpower for their staffing needs. Praised as 'thorough professionals' with an exceptional grasp of Bangalore's hospitality sector, the Manago team has been an invaluable partner to Global Kitchen, overseeing operations for establishments such as The Irish House and Bombay Brasserie.",
+    img: Img4,
   },
   {
     title: "Biggies Burger",
@@ -140,21 +143,21 @@ const cardData = [
     img: Img3,
   },
   {
-    title: "Global Kitchen",
+    title: "The Peak",
     content:
-      "For the past three years, Global Kitchen, a prominent figure in Bangalore's hospitality industry, has consistently relied on Manago Manpower for their staffing needs. Praised as 'thorough professionals' with an exceptional grasp of Bangalore's hospitality sector, the Manago team has been an invaluable partner to Global Kitchen, overseeing operations for establishments such as The Irish House and Bombay Brasserie.",
-    img: Img1,
+      "The Peak founder Mr. Param Shinde says “We’ve been using Manago’s services for the last couple of years now, they’ve constantly assisted us not only in our manpower requirements but also in the setting up of our upcoming F&B premises also with staff uniform. They have a highly proactive group that has gained our trust and business with their commitment to delivering what’s promised. Much needed in the tough times our industry is facing. Special thanks to Sheetal, Prakash & Sumit.",
+    img: Img2,
   },
   {
-    title: "Shilton Hospitality",
+    title: "Watson's Ulsoor (Shilton Hospitality)",
     content:
       "Shilton Hospitality, a prominent entity in Bangalore's thriving hospitality sector, has maintained a steadfast partnership with Manago Kitchen Equipment and Manago Manpower. Corporate HR representative, Shilpa K Bangera, lauds the Manago team for their unwavering promptness, professionalism, and attentiveness to Shilton Hospitality's requirements. She expresses a strong conviction that Manago is poised to revolutionize the hospitality sector for the better.",
-    img: Img1,
+    img: Img5,
   },
   {
     title: "Play Arena",
     content:
       "We had a fantastic experience working with MANAGO 360. Their team was incredibly responsive, supportive, and helpful throughout the entire process. It felt like a personalized service, which is rare to find nowadays. We highly recommend MANAGO for their exceptional customer service and prompt actions.",
-    img: Img1,
+    img: Img6,
   },
 ];

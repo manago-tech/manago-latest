@@ -22,11 +22,12 @@ import { SiLinkedin } from "react-icons/si";
 import { ImFacebook2 } from "react-icons/im";
 import { PiInstagramLogoFill } from "react-icons/pi";
 
-import Team1 from "@/assets/team/arihant.jpg";
-import Team2 from "@/assets/team/prakash.jpg";
-import Team3 from "@/assets/team/team-3.jpg";
-import Team4 from "@/assets/team/team-4.jpg";
-import Team5 from "@/assets/team/sheetal.jpeg";
+import Team1 from "@/assets/team/arihant.png";
+import Team2 from "@/assets/team/prakash.png";
+import Team3 from "@/assets/team/prasanna.png";
+import Team4 from "@/assets/team/satya.png";
+import Team5 from "@/assets/team/sheetal.png";
+import Team6 from "@/assets/team/sumit.png";
 
 export default function Team() {
   return (
@@ -44,12 +45,11 @@ export function TeamCarousel() {
   return (
     <div
       className="w-full flex flex-col "
-      //   px-[2rem] md:px-[4rem] xl:px-[8.5rem]
+        // px-[2rem] md:px-[4rem] xl:px-[8.5rem]
     >
       <Carousel className="">
         <div className="flex flex-row justify-between">
           <div className="flex md:hidden flex-col max-w-sm p-3 gap-3">
-            {/* <p className="text-xs ">OUR TEAM</p> */}
             <div className="flex flex-row text-xs">
               <span>
                 <img
@@ -66,20 +66,17 @@ export function TeamCarousel() {
               </span>
             </div>
             <h1 className="marcellus text-2xl sm:text-4xl font-light">
-              The People <br /> Behind MANAGO
+              The People Behind MANAGO
             </h1>
-            <ul className="list-disc text-xs pl-5 mt-1">
+            {/* <ul className="list-disc text-xs pl-5 mt-1">
               <li>Extensive Industry Experience</li>
               <li>Specialized Expertise</li>
               <li>Proven Track Record</li>
               <li>Collaborative Consulting</li>
               <li>Client Centric Approach</li>
-            </ul>
+            </ul> */}
           </div>
-          <div className="flex  items-end md:hidden ">
-            <CarouselPrevious className="mr-4" />
-            <CarouselNext />
-          </div>
+        
         </div>
         <CarouselContent className="">
           <CarouselItem key="1" className="basis-1/1 pl-0">
@@ -104,13 +101,13 @@ export function TeamCarousel() {
                 <h1 className="marcellus  xl:text-4xl lg:text-3xl md:text-2xl sm:text-4xl font-light">
                   The People <br /> Behind MANAGO
                 </h1>
-                <ul className="list-disc text-xs pl-5 mt-1">
+                {/* <ul className="list-disc text-xs pl-5 mt-1">
                   <li>Extensive Industry Experience</li>
                   <li>Specialized Expertise</li>
                   <li>Proven Track Record</li>
                   <li>Collaborative Consulting</li>
                   <li>Client Centric Approach</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </CarouselItem>
@@ -126,7 +123,7 @@ export function TeamCarousel() {
                 >
                   <CardHeader className="p-0">
                     <CardTitle>
-                      <div className="max-h-[22rem] overflow-hidden">
+                      <div className="md:max-h-[22rem] overflow-hidden">
                         <img
                           src={card.image.src}
                           className="w-full h-full  transform transition duration-500 hover:scale-110"
@@ -139,9 +136,15 @@ export function TeamCarousel() {
                     <div className="flex justify-between items-center mt-2 sm:mt-4 mb-1 sm:mb-2">
                       <p className="text-xl marcellus">{card.name}</p>
                       <div className="hidden md:flex space-x-2">
-                        <Link href={card.links.linkedin} passHref>
-                          <SiLinkedin className="w-6 h-6 text-black" />
-                        </Link>
+                        {card.links.linkedin ? (
+                          <Link href={card.links.linkedin} passHref rel="noopener noreferrer" target="_blank">
+                            <SiLinkedin className="w-6 h-6 text-black" />
+                          </Link>
+                        ) : (
+                          <Link href={card.links.facebook || "#"} passHref rel="noopener noreferrer" target="_blank">
+                            <ImFacebook2 className="w-6 h-6 text-black" />
+                          </Link>
+                        )}
                       </div>
                     </div>
                     <p className="text-xs leading-relaxed">{card.title}</p>
@@ -149,8 +152,12 @@ export function TeamCarousel() {
 
                   <CardFooter className="p-0 pt-2">
                     <div className="flex md:hidden space-x-2">
-                      <Link href={card.links.linkedin} passHref>
-                        <SiLinkedin className="w-4 h-4 text-black" />
+                      <Link href={card.links.linkedin || card.links.facebook || "#"} passHref rel="noopener noreferrer" target="_blank">
+                        {card.links.linkedin ? (
+                          <SiLinkedin className="w-4 h-4 text-black" />
+                        ) : (
+                          <ImFacebook2 className="w-4 h-4 text-black" />
+                        )}
                       </Link>
                     </div>
                   </CardFooter>
@@ -159,7 +166,7 @@ export function TeamCarousel() {
             </>
           ))}
         </CarouselContent>
-        <div className="md:flex hidden  items-center justify-center mt-4  ">
+        <div className="flex items-center justify-center mt-4  ">
           <CarouselPrevious className="mr-4" />
           <CarouselNext />
         </div>
@@ -173,7 +180,7 @@ const cardData = [
     name: "Arihant Bagra",
     title: "Licensing & Finance",
     links: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/arihant-bagra-ab1144223",
     },
     image: Team1,
   },
@@ -181,15 +188,15 @@ const cardData = [
     name: "Prakash Bagra",
     title: "Equipment Furniture & Machinery",
     links: {
-      linkedin: "#",
+      facebook: "https://www.facebook.com/share/ed2kvdUEdcEnuWJi/?mibextid=qi2Omg",
     },
     image: Team2,
   },
   {
     name: "Prasanna Sankhala",
-    title: "Human Resources (HR)",
+    title: "Hotel Real-estate",
     links: {
-      linkedin: "https://www.linkedin.com/in/prasanna-sankhala-0000001b0/",
+      linkedin: "https://www.linkedin.com/in/prasanna-sankhala-760399a0",
     },
     image: Team3,
   },
@@ -197,24 +204,24 @@ const cardData = [
     name: "Satya Prakash Singh",
     title: "Interior & Sign Board",
     links: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/satya-prakash-singh-386a8818",
     },
     image: Team4,
   },
   {
     name: "Sheetal Mishra",
-    title: "Manpower",
+    title: "Manpower Services",
     links: {
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/sheetal-mishra-16686a144",
     },
     image: Team5,
   },
-  // {
-  //   name: "Arihant Jain",
-  //   title: "Licensing & Finance",
-  //   links: {
-  //     linkedin: "#",
-  //   },
-  //   image: Img1,
-  // },
+  {
+    name: "Sumit Dadhich",
+    title: "Customer Service & Training",
+    links: {
+      facebook: "https://www.facebook.com/share/dfh7gwhGdyuJJ3hD/?mibextid=qi2Omg",
+    },
+    image: Team6,
+  },
 ];

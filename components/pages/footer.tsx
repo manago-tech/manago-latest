@@ -25,28 +25,36 @@ export default function Footer() {
             One Stop Solution for Bangalore Hoteliers
           </p>
           <div className="flex gap-4 mt-2">
+            <Link href="https://wa.me/7727072790" rel="noopener noreferrer" target="_blank">
             <Button className="p-2 bg-transparent  border text-sm border-white text-white hover:border-[#25D366] hover:bg-[#25D366] hover:text-black rounded-none">
               <span>
                 <FaWhatsapp className="text-xl mr-2" />
               </span>
               WHATSAPP
             </Button>
-            <Button className="p-2 bg-transparent  border text-sm hover:text-sm border-white text-white hover:border-[#E1306C] hover:bg-[#E1306C]  rounded-none">
-              <Link href="#about"><PiInstagramLogoFill className="text-xl"/></Link>
-            </Button>
-            <Button className="p-2 bg-transparent   border text-sm border-white text-white hover:border-[#1877F2] hover:bg-[#1877F2] rounded-none">
-              <Link href="#about"><ImFacebook2 className="text-xl"/></Link>
-            </Button>
+            </Link>
+
+            <Link href="https://www.instagram.com/manago_official" rel="noopener noreferrer" target="_blank">
+              <Button className="p-2 bg-transparent  border text-sm hover:text-sm border-white text-white hover:border-[#E1306C] hover:bg-[#E1306C]  rounded-none">
+                <PiInstagramLogoFill className="text-xl" />
+              </Button>
+            </Link>
+
+            <Link href="https://www.facebook.com/ManagoForEverything/" rel="noopener noreferrer" target="_blank">
+              <Button className="p-2 bg-transparent   border text-sm border-white text-white hover:border-[#1877F2] hover:bg-[#1877F2] rounded-none">
+                <ImFacebook2 className="text-xl" />
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="p-3 col-span-6 sm:col-span-3 md:col-span-4 lg:col-span-3">
           <p className="text-sm font-medium">EXPLORE</p>
           <div className="text-[12px] pt-2 leading-7 font-extralight">
-            <Link href="#">About Us</Link> <br />
-            <Link href="#">Our Services</Link> <br />
-            <Link href="#">Testimonials</Link> <br />
-            <Link href="#">Our Team</Link> <br />
-            <Link href="#">More From Manago</Link>
+            <Link href="#about">About Us</Link> <br />
+            <Link href="#services">Our Services</Link> <br />
+            <Link href="#testimonials">Testimonials</Link> <br />
+            <Link href="#team">Our Team</Link> <br />
+            <Link href="#success">More From Manago</Link>
           </div>
         </div>
         <div className="p-3 col-span-6 sm:col-span-3 md:col-span-4 lg:col-span-2 leading-snug ">
