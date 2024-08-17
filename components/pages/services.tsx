@@ -89,7 +89,7 @@ export default function Services() {
 
 const cardData = [
   {
-    title: "Restoestate",
+    title: "Resto-estate",
     content:
       "Your Trusted Partner in F&B and Real Estate Expansion, facilitating seamless franchise distribution and property rentals.",
     links: {
@@ -132,7 +132,7 @@ const cardData = [
   {
     title: "Kitchen Equipment",
     content:
-      "Providing high-quality new and refurbished kitchen equipment tailored for commercial kitchens.",
+      "Providing high-quality kitchen equipment tailored for commercial kitchens.",
     links: {
       facebook: "https://www.facebook.com/profile.php?id=61564445605166",
       instagram: "https://www.instagram.com/manago_kitchen_equipment/",
