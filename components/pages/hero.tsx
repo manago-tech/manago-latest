@@ -27,8 +27,7 @@ export default function Hero() {
 
             <div className="relative z-[10] flex flex-col gap-6">
               <p
-                className="text-white marcellus text-3xl sm:text-4xl md:text-5xl"
-                style={{ lineHeight: "55px" }}
+                className="text-white marcellus text-3xl sm:text-4xl md:text-5xl leading-[35px] sm:leading-[55px]"
               >
                 <span className="md:max-w-xl ">ONE STOP SOLUTION</span> <br />{" "}
                 FOR BANGALORE HOTELIERS
