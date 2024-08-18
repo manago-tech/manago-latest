@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ImFacebook2 } from "react-icons/im";
 import { PiInstagramLogoFill } from "react-icons/pi";
+import { FaLink } from "react-icons/fa";
 
 import star from "@/assets/star.svg";
 import card1 from "@/assets/services/card-1.png";
@@ -65,6 +66,11 @@ export default function Services() {
                     <Link href={card.links.instagram} passHref rel="noopener noreferrer" target="_blank">
                       <PiInstagramLogoFill className="text-2xl" />
                     </Link>
+                    {card.links.link && (
+                      <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
+                        <FaLink className="text-xl" />
+                      </Link>
+                    )}
                   </div>
                 </div>
                 <p className="text-xs leading-relaxed">{card.content}</p>
@@ -136,6 +142,7 @@ const cardData = [
     links: {
       facebook: "https://www.facebook.com/profile.php?id=61564445605166",
       instagram: "https://www.instagram.com/manago_kitchen_equipment/",
+      link: "managokitchen.in",
     },
     image: card5, 
   },
