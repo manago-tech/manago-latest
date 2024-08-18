@@ -83,6 +83,11 @@ export default function Services() {
                   <Link href={card.links.instagram} passHref rel="noopener noreferrer" target="_blank">
                     <PiInstagramLogoFill className="text-2xl " />
                   </Link>
+                  {card.links.link && (
+                      <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
+                        <FaLink className="text-xl" />
+                      </Link>
+                    )}
                 </div>
               </CardFooter>
             </Card>
