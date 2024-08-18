@@ -84,7 +84,7 @@ export default function Services() {
                     <PiInstagramLogoFill className="text-2xl " />
                   </Link>
                   {card.links.link && (
-                      <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
+                    <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
                         <FaLink className="text-xl" />
                       </Link>
                     )}
@@ -147,7 +147,7 @@ const cardData = [
     links: {
       facebook: "https://www.facebook.com/profile.php?id=61564445605166",
       instagram: "https://www.instagram.com/manago_kitchen_equipment/",
-      link: "managokitchen.in",
+      link: "https://managokitchen.in/",
     },
     image: card5, 
   },
