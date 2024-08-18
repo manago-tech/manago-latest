@@ -23,9 +23,9 @@ export default function Hero() {
       <div className="w-full text-white h-[100vh] lg:max-w-7xl mx-auto">
         <div className="flex items-end justify-start h-full px-10 pb-28 md:pb-40">
           <div className="relative ">
-            <div className="absolute hidden md:block  z-[1] w-full  h-[40vh] sm:h-[37vh] bg-gradient-to-t from-black/80 via-black/80 to-black/80 blur-lg "></div>
+            <div className="absolute hidden md:block  z-[1] w-full  h-[40vh] sm:h-[37vh] bg-gradient-to-t from-black/60 via-black/60 to-black/80 blur-lg "></div>
 
-            <div className="relative z-[10] flex flex-col gap-6">
+            <div className="relative z-[10] flex flex-col md:gap-6 gap-4">
               <p
                 className="text-white marcellus text-3xl sm:text-4xl md:text-5xl leading-[35px] sm:leading-[55px]"
               >
