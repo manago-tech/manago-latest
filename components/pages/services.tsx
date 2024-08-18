@@ -11,7 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ImFacebook2 } from "react-icons/im";
 import { PiInstagramLogoFill } from "react-icons/pi";
-import { FaLink } from "react-icons/fa";
+import { LuGlobe } from "react-icons/lu";
 
 import star from "@/assets/star.svg";
 import card1 from "@/assets/services/card-1.png";
@@ -68,7 +68,7 @@ export default function Services() {
                     </Link>
                     {card.links.link && (
                       <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
-                        <FaLink className="text-xl" />
+                        <LuGlobe className="text-xl" />
                       </Link>
                     )}
                   </div>
@@ -85,7 +85,7 @@ export default function Services() {
                   </Link>
                   {card.links.link && (
                     <Link href={card.links.link} passHref rel="noopener noreferrer" target="_blank">
-                        <FaLink className="text-xl" />
+                        <LuGlobe className="text-xl" />
                       </Link>
                     )}
                 </div>
