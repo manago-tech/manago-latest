@@ -168,7 +168,7 @@ const cardData = [
     links: {
       facebook:
         "https://www.facebook.com/profile.php?id=61564163493455&sk=about",
-      instagram: "https://www.instagram.com/manago_manpower/",
+      instagram: "https://www.instagram.com/manago_fnb?utm_source=qr&igsh=MWx4OGo4aXY4NTdjbQ==",
     },
     image: card7, 
   },
