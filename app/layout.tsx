@@ -17,7 +17,9 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={favicon.src} />
       </head>
-      <body className=" overflow-x-hidden">{children}</body>
+      <body className=" overflow-x-hidden">
+        {children}
+        </body>
     </html>
   );
 }

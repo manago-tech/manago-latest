@@ -1,10 +1,10 @@
-import Hero from "@/components/pages/hero";
-import About from "@/components/pages/about";
-import Services from "@/components/pages/services";
-import Testimonials from "@/components/pages/testimonials";
-import Team from "@/components/pages/team";
-import Success from "@/components/pages/success";
-import Footer from "@/components/pages/footer";
+import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
+import Services from "@/components/sections/services";
+import Testimonials from "@/components/sections/testimonials";
+import Team from "@/components/sections/team";
+import Success from "@/components/sections/success";
+import Footer from "@/components/sections/footer";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
