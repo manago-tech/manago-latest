@@ -329,7 +329,7 @@ export default function Policies() {
       </p>
 
       <h2 className="text-2xl font-medium pb-2">How to Delete Cookies</h2>
-      <p className="pb-4">
+      <p className="pb-6">
         Most web browsers allow you to control cookies through their settings
         preferences. However, if you limit the ability of websites to set
         cookies, you may worsen your overall user experience, since it will no
@@ -339,20 +339,174 @@ export default function Policies() {
 
 
 
-      <h2 className="text-3xl font-medium pb-4">Contact Us</h2>
+
+
+      <h1 className="text-3xl font-medium pb-8">Manago Manpower - Privacy Policy</h1>
+      <h2 className="text-2xl font-medium pb-2">1. Introduction</h2>
       <p className="pb-4">
-        If you have any questions about this Cookies Policy, please contact us:
+        Welcome to Manago. We are committed to protecting your privacy and ensuring you have a positive experience on our platform. This privacy policy explains how we access, collect, use, and share personal and sensitive user data. It also outlines our data handling procedures, retention, and deletion policies.
       </p>
-      <ul className="list-disc pl-5 pb-4">
-        <li>By email: info@manago.in</li>
-        <li>By phone: 7338000475</li>
-        <li>
-          By mail: Manago Manpower Solutions, Manipal County Road, #56, 3rd
-          Cross, Aishwarya Crystal Layout, Singasandra, Bengaluru, Karnataka
-          560068.
+      <h2 className="text-2xl font-medium pb-4">2. Types of Data Collected</h2>
+      <ul className="pb-4">
+        <li className="pb-4"><strong>Personal Data:</strong> Information that identifies you as an individual, such as:
+          <ul className="list-disc pl-5 pt-4">
+            <li>Name</li>
+            <li>Email address</li>
+            <li>Phone number</li>
+          </ul>
+        </li>
+        <li className="pb-4"><strong>Sensitive Data:</strong> Information that is considered sensitive, including:
+          <ul className="list-disc pl-5 pt-4">
+            <li>Financial information (credit card details, bank account information)</li>
+            <li>Health information</li>
+            <li>Biometric data</li>
+            <li>Government-issued identifiers (e.g., social security number, passport number)</li>
+          </ul>
+        </li>
+        <li className="pb-4"><strong>Usage Data:</strong> Information on how you interact with our app, such as:
+          <ul className="list-disc pl-5 pt-4">
+            <li>IP address</li>
+            <li>Browser type and version</li>
+            <li>Pages visited</li>
+            <li>Time and date of visit</li>
+            <li>Time spent on each page</li>
+          </ul>
+        </li>
+        <li className=""><strong>Device Information:</strong> Data about the device used to access our services, including:
+          <ul className="list-disc pl-5 pt-4">
+            <li>Device type (e.g., mobile, desktop)</li>
+            <li>Operating system</li>
+            <li>Unique device identifiers</li>
+            <li>Browser type and version</li>
+          </ul>
         </li>
       </ul>
-      // ... existing code ...
+
+      <h2 className="text-2xl font-medium pb-2">3. How We Collect Data</h2>
+      <p className="pb-4">
+        We collect data through various methods:
+      </p>
+      <ul className="list-disc pl-5 pb-4">
+          <li><strong>Directly from you:</strong> When you sign up, fill out forms, or communicate with us.</li>
+          <li><strong>Automatically:</strong> Through cookies, web beacons, and other tracking technologies.</li>
+          <li><strong>From third parties:</strong> Such as social media platforms, partners, and service providers.</li>
+        </ul>
+      <h2 className="text-2xl font-medium pb-4">4. Use of Collected Data</h2>
+      <p className="pb-4">
+        We use your data for the following purposes:
+      </p>
+      <ul className="list-disc pl-5 pb-4">
+          <li><strong>To provide and maintain our services:</strong> Ensuring the app functions as intended.</li>
+          <li><strong>To improve our services:</strong> Analyzing usage data to enhance user experience.</li>
+          <li><strong>To communicate with you:</strong> Sending updates, newsletters, and support messages.</li>
+          <li><strong>For security and fraud prevention:</strong> Protecting against unauthorized access and activities.</li>
+          <li><strong>For legal and compliance purposes:</strong> Adhering to legal obligations and defending our rights.</li>
+        </ul>
+
+      <h2 className="text-2xl font-medium pb-4">5. Sharing of Data</h2>
+      <p className="pb-4">
+        We may share your data with:
+       </p>
+       
+      <ul className="list-disc pl-5 pb-4">
+          <li><strong>Business partners:</strong> Partners with whom we collaborate to offer services.</li>
+          <li><strong>Legal authorities:</strong> When required by law, to comply with legal processes or protect our rights.</li>
+          <li><strong>With your consent:</strong> When you provide explicit permission to share your data.</li>
+        </ul>
+        <p className='pb-4'>
+        We ensure all third parties adhere to strict data protection standards.
+      </p>
+
+      <h2 className="text-2xl font-medium pb-4">6. Data Handling Procedures</h2>
+      <p className="pb-4">
+        Security Measures: We implement robust security measures to protect your data, including encryption, access controls, and regular security audits.
+      </p>
+
+        <ul className="list-disc pl-5 pb-4">
+          <li><strong>Access Controls:</strong> Only authorized personnel have access to personal and sensitive data. Access is granted based on the principle of least privilege.</li>
+          <li><strong>Data Minimization:</strong> We only collect data that is necessary for the purposes outlined in this policy.</li>
+        </ul>
+
+      <h2 className="text-2xl font-medium pb-4">7. Data Retention and Deletion</h2>
+      <p className="pb-4">
+        <strong>Retention Policy:</strong> We retain your data for as long as necessary to fulfill the purposes for which it was collected, comply with legal obligations, resolve disputes, and enforce our agreements.
+        <br/>
+        <strong>Deletion Policy:</strong> When data is no longer needed, we securely delete or anonymize it. You may also request deletion of your data by contacting us through [contact method].
+      </p>
+
+      <h2 className="text-2xl font-medium pb-4">8. User Rights</h2>
+      <p className="pb-4">
+        You have the following rights regarding your data:
+
+</p>
+
+<ul className="list-disc pl-5 pb-4">
+          <li><strong>Access:</strong> Request a copy of the data we hold about you.</li>
+          <li><strong>Correction:</strong> Correct any inaccuracies in your data.</li>
+          <li><strong>Deletion:</strong> Request deletion of your data.</li>
+          <li><strong>Objection:</strong> Object to the processing of your data.</li>
+          <li><strong>Restriction:</strong> Request restriction of processing under certain circumstances.</li>
+          <li><strong>Portability:</strong> Request a copy of your data in a structured, commonly used, and machine-readable format.</li>
+        </ul>
+<p className="pb-4">
+        To exercise these rights, please contact us at [contact method].
+      </p>
+
+
+      <h2 className="text-2xl font-medium pb-4">9. Changes to This Privacy Policy</h2>
+      <p className="pb-4">
+        We may update this privacy policy from time to time. We will notify you of any changes by posting the new privacy policy on this page. You are advised to review this policy periodically for any changes.
+      </p>
+
+      <h2 className="text-2xl font-medium pb-2">Managing and Deleting Cookies</h2>
+      <p className="pb-4">
+        You can manage and delete cookies through your device settings or browser settings. Here are general instructions:
+        </p>
+        
+        <ul className="pl-5">
+          <li className="pb-4">For Android Devices: 
+            <a href="https://support.google.com/accounts/answer/61416?hl=en&co=GENIE.Platform%3DAndroid" className="text-blue-500">Manage cookies in Android device</a>
+            <ul className="list-disc pl-5">
+              <li className="pt-4">Open the Settings app on your Android device.</li>
+              <li>Go to Apps or Application Manager.</li>
+              <li>Find and select the app for which you want to delete cookies.</li>
+              <li>Tap on Storage.</li>
+              <li>Tap on Clear Cache to delete cookies.</li>
+            </ul>
+          </li>
+          <li className="pb-4">For iOS Devices: <a href="https://support.apple.com/en-in/105082" className="text-blue-500">Manage Cookies in iOS device</a>
+            <ul className="list-disc pl-5">
+              <li className="pt-4">Open the Settings app on your iOS device.</li>
+              <li>Scroll down and find the app for which you want to delete cookies.</li>
+              <li>Tap on the app name.</li>
+              <li>Look for options to Clear Cache or Clear Data. If available, tap on it to delete cookies.</li>
+            </ul>
+          </li>
+          <li className="pb-4">Here are some resources for managing cookies on popular browsers:
+            <ul className="">
+              <li className="pt-4 pb-4">Google Chrome: <a href="https://support.google.com/accounts/answer/32050" className="text-blue-500">Manage Cookies in Chrome</a></li>
+              <li className="pb-4">Internet Explorer: <a href="https://support.microsoft.com/en-us/topic/how-to-delete-cookie-files-in-internet-explorer-bca9446f-d873-78de-77ba-d42645fa52fc" className="text-blue-500">Delete Cookies in Internet Explorer</a></li>
+              <li className="pb-4">Mozilla Firefox: <a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US" className="text-blue-500">Delete Cookies in Firefox</a></li>
+              <li>Apple Safari: <a href="https://www.manago.in/policies.html#:~:text=Manage%20Cookies%20and%20Website%20Data%20in%20Safari" className="text-blue-500">Manage Cookies and Website Data in Safari</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <p className="pb-4">
+        For other browsers, please visit your browser’s official support pages.
+      </p>
+
+
+      <h2 className="text-2xl font-medium pb-2">Contact Us</h2>
+      <p className="pb-4">
+        If you have any questions about this Cookies Policy, please contact us:
+        <ul className="">
+          <li className="pt-4 pb-4">By email: info@manago.in</li>
+          <li className="pb-4">By phone: 7338000475</li>
+          <li>By mail: Manago Manpower Solutions, Manipal County Road, #56, 3rd Cross, Aishwarya Crystal Layout, Singasandra, Bengaluru, Karnataka 560068.</li>
+        </ul>
+      </p>
+ 
     </div>
   );
 }
