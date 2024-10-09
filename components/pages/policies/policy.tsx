@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Policies() {
   return (
-    <div className="py-10 px-20 w-[75%]">
+    <div className="py-10 px-10 md:px-20 w-full md:w-[75%]">
       <h1 className="text-3xl font-medium pb-8">
         Manago Manpower - Privacy Policy
       </h1>
