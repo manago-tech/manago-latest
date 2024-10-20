@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import image from "@/assets/services-page/blog-3.png";
+import image from "@/assets/services-page/blog-5.png";
 import portfolio from "@/assets/services-page/blog-3-portfolio.png";
 import steps from "@/assets/services-page/blog-3-steps.png";
 
@@ -175,17 +175,6 @@ export default function blog() {
                 <Link href={service.id} className="text-sm">
                   {service.title}
                 </Link>
-                {service.subSections && (
-                  <ul className="pl-4 leading-relaxed">
-                    {service.subSections.map((subSection, subIndex) => (
-                      <li key={subIndex}>
-                        <Link href={subSection.id} className="text-sm">
-                          {subSection.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                )}
               </div>
             ))}
           </div>
@@ -201,8 +190,8 @@ const moreServices = [
     link: "/our-services/restoestate",
   },
   {
-    title: "Interior",
-    link: "/our-services/interior",
+    title: "Licensing",
+    link: "/our-services/licensing",
   },
   {
     title: "Sign Board",
@@ -228,63 +217,23 @@ const moreServices = [
 
 const pageHeaders = [
   {
-    title: "Introduction",
-    id: "#introduction",
+    title: "Our Services",
+    id: "#our-services",
   },
   {
-    title: "Licenses Required To Start Food Business In India",
-    id: "#licenses-required",
+    title: "2D & 3D Design",
+    id: "#2d-3d-design",
   },
   {
-    title: "Here’s What Manago Offers",
-    id: "#manago-offers",
+    title: "Construction Services",
+    id: "#construction-services",
   },
   {
-    title: "Food License",
-    id: "#food-license",
+    title: "Why Choose Manago Interior?",
+    id: "#why-choose-manago-interior",
   },
   {
-    title: "Trade License/Eating House License",
-    id: "#trade-license",
-  },
-  {
-    title: "Liquor License",
-    id: "#liquor-license",
-  },
-  {
-    title: "Fire Department NOC",
-    id: "#fire-department-noc",
-  },
-  {
-    title: "Shops and Establishment Registration",
-    id: "#shops-and-establishment-registration",
-  },
-  {
-    title: "Pollution clearance",
-    id: "#pollution-clearance",
-  },
-  {
-    title: "License for playing music or videos",
-    id: "#license-for-playing-music-or-videos",
-  },
-  {
-    title: "Tax registrations",
-    id: "#tax-registrations",
-    subSections: [
-      { title: "Income Tax", id: "#income-tax" },
-      {
-        title: "GST (Goods and Service Tax)",
-        id: "#gst-goods-and-service-tax",
-      },
-      { title: "Professional Tax", id: "#professional-tax" },
-    ],
-  },
-  {
-    title: "Labour law Registrations",
-    id: "#labour-law-registrations",
-  },
-  {
-    title: "Infrastructure Licenses",
-    id: "#infrastructure-licenses",
+    title: "Portfolio (History of Manago Interior)",
+    id: "#portfolio",
   },
 ];
