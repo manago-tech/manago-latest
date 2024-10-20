@@ -50,11 +50,11 @@ export default function Footer() {
         <div className="p-3 col-span-6 sm:col-span-3 md:col-span-4 lg:col-span-3">
           <p className="text-sm font-medium">EXPLORE</p>
           <div className="flex flex-col text-[12px] pt-2 leading-7 font-extralight">
-            <Link href="#about">About Us</Link> 
-            <Link href="#services">Our Services</Link> 
-            <Link href="#testimonials">Testimonials</Link> 
-            <Link href="#team">Our Team</Link> 
-            <Link href="#success">More From Manago</Link> 
+            <Link href="/#about">About Us</Link> 
+            <Link href="/#services">Our Services</Link> 
+            <Link href="/#testimonials">Testimonials</Link> 
+            <Link href="/#team">Our Team</Link> 
+            <Link href="/#success">More From Manago</Link> 
             <Link href="/policies">Policies</Link>
           </div>
         </div>
