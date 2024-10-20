@@ -48,11 +48,13 @@ export default function Services() {
               <CardHeader className="p-0">
                 <CardTitle>
                   <div className="overflow-hidden">
+                    <Link href={card.href}>
                     <img
                       src={card.image.src}
                       className="w-full h-full transform transition duration-500 hover:scale-110"
                       alt="Card Image"
                     />
+                    </Link>
                   </div>
                 </CardTitle>
               </CardHeader>
@@ -101,6 +103,7 @@ export default function Services() {
 const cardData = [
   {
     title: "Resto-estate",
+    href: "/our-services/restoestate",
     content:
       "Your Trusted Partner in F&B and Real Estate Expansion, facilitating seamless franchise distribution and property rentals.",
     links: {
@@ -112,6 +115,7 @@ const cardData = [
   },
   {
     title: "Licensing",
+    href: "/our-services/licensing",
     content:
       "Comprehensive licensing, accounting, and compliance solutions for the hospitality sector.",
     links: {
@@ -122,6 +126,7 @@ const cardData = [
   },
   {
     title: "Interior",
+    href: "/our-services/interior",
     content:
       "Transforming culinary visions into reality with bespoke interior design and construction services.",
     links: {
@@ -132,6 +137,7 @@ const cardData = [
   },
   {
     title: "Sign Board",
+    href: "/our-services/signboard",
     content:
       "Crafting eye-catching LED sign boards to elevate your establishment's visual appeal.",
     links: {
@@ -142,6 +148,7 @@ const cardData = [
   },
   {
     title: "Kitchen Equipment",
+    href: "/our-services/kitchen",
     content:
       "Providing high-quality kitchen equipment tailored for commercial kitchens.",
     links: {
@@ -153,6 +160,7 @@ const cardData = [
   },
   {
     title: "Furniture",
+    href: "/our-services/furniture",
     content:
       "Elegant and functional hospitality furniture designed to enhance guest experiences.",
     links: {
@@ -163,6 +171,7 @@ const cardData = [
   },
   {
     title: "Manpower",
+    href: "/our-services/manpower",
     content:
       "Supplying skilled manpower to drive excellence across Bangalore's hospitality industry.",
     links: {
@@ -174,6 +183,7 @@ const cardData = [
   },
   {
     title: "Uniform",
+    href: "/our-services/uniform",
     content:
       "Custom-designed uniforms that combine functionality with style, enhancing your brand identity.",
     links: {

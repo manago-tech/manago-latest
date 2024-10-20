@@ -5,7 +5,7 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logo from "@/assets/logo.svg";
+import logo from "@/assets/transparent_logo.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -48,8 +48,8 @@ export default function Example() {
                     aria-current={item.current ? "page" : undefined}
                     className={classNames(
                       item.current
-                        ? "bg-gray-900 text-white"
-                        : "text-sm font-normal text-white hover:text-[#bcbcbc]",
+                        ? "bg-gray-900 text-black"
+                        : "text-sm font-normal text-black hover:text-[#bcbcbc]",
                       "rounded-md px-2 py-2"
                     )}
                   >
@@ -61,7 +61,7 @@ export default function Example() {
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center lg:hidden">
             {/* Mobile menu button */}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-white hover:text-[#bcbcbc] bg-transparent border-none hover:border-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#bcbcbc]">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:text-[#bcbcbc] bg-transparent border-none hover:border-none focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#bcbcbc]">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -77,7 +77,7 @@ export default function Example() {
         </div>
       </div>
 
-      <DisclosurePanel className="lg:hidden absolute w-full bg-black/90 text-white z-10">
+      <DisclosurePanel className="lg:hidden absolute w-full bg-black/90 text-black z-10">
         <div className="space-y-1 px-2 pb-3 pt-2">
           {navigation.map((item) => (
             <DisclosureButton
@@ -87,8 +87,8 @@ export default function Example() {
               aria-current={item.current ? "page" : undefined}
               className={classNames(
                 item.current
-                  ? "bg-gray-900 text-white"
-                  : "text-sm font-bold text-white hover:text-[#bcbcbc]",
+                  ? "bg-gray-900 text-black"
+                  : "text-sm font-bold text-black hover:text-[#bcbcbc]",
                 "block rounded-md px-3 py-2 text-base font-medium"
               )}
             >
