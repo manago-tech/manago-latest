@@ -1,0 +1,290 @@
+"use client";
+import React from "react";
+import image from "@/assets/services-page/blog-3.png";
+import portfolio from "@/assets/services-page/blog-3-portfolio.png";
+import steps from "@/assets/services-page/blog-3-steps.png";
+
+import Link from "next/link";
+import { SquareArrowOutUpRight } from "lucide-react";
+
+export default function blog() {
+  return (
+    <div className="bg-[#F1EEE766] w-full gap-10 grid grid-cols-1 md:grid-cols-[70%_30%] px-7 sm:px-14 md:px-28 py-10">
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4">
+          <h1 className="text-4xl font-bold marcellus">Manago Interior</h1>
+          <img
+            src={image.src}
+            className="w-full h-72 object-cover"
+            alt="Card Image"
+          />
+          <p className="text-base mt-3" id="introduction">
+            At Manago Interior, we specialize in crafting unique and inviting
+            spaces for restaurants, cafes, pubs, tea joints, and hotels. Our
+            dedicated team of designers and construction experts brings your
+            vision to life through innovative 2D and 3D designs and exceptional
+            construction services. Whether you’re starting from scratch or
+            looking to remodel, we have the expertise and passion to create an
+            atmosphere that not only meets your needs but also captivates your
+            guests.
+          </p>
+        </div>
+
+        <div id="our-services" className="flex flex-col gap-8 ">
+          <p className="text-xl font-semibold">Our Services :</p>
+
+          <img src={steps.src} alt="steps" />
+
+          <div id="2d-3d-design" className="flex flex-col gap-2">
+            <p className="text-xl font-semibold">2D & 3D Design : </p>
+
+            <p className="text-base leading-relaxed">
+              Experience your ideas come to life with our comprehensive design
+              services. We utilize cutting-edge technology to create detailed 2D
+              floor plans and stunning 3D visualizations. Our design process
+              includes:
+            </p>
+
+            <ul className="list-disc list-outside pl-6 text-base leading-relaxed">
+              <li>
+                Concept Development: We work closely with you to understand your
+                vision and requirements, ensuring that every detail reflects
+                your brand’s identity.
+              </li>
+              <li>
+                Visual Representation: Our advanced 3D renderings provide a
+                realistic view of your space, allowing you to explore design
+                elements before construction begins.
+              </li>
+              <li>
+                Space Planning : Our expert designers maximize functionality and
+                flow, creating an environment that enhances the guest
+                experience.
+              </li>
+            </ul>
+          </div>
+
+          <div id="construction-services" className="flex flex-col gap-2">
+            <p className="text-xl font-semibold">Construction Services : </p>
+
+            <p className="text-base leading-relaxed">
+              At Manago Interior, we don't just design; we also build. Our
+              construction team is committed to delivering high-quality
+              workmanship on every project. Our construction services include:
+            </p>
+
+            <ul className="list-disc list-outside pl-6  text-base leading-relaxed">
+              <li>
+                Project Management: From planning to execution, we oversee every
+                aspect of the construction process, ensuring timely completion
+                and attention to detail.
+              </li>
+              <li>
+                Renovations and Build-outs : Whether you’re opening a new
+                location or updating an existing space, we handle renovations
+                and build-outs to ensure your vision becomes a reality.
+              </li>
+              <li>
+                Quality Assurance: Our commitment to quality is evident in every
+                project. We source the best materials and skilled craftsmen to
+                ensure a durable and aesthetically pleasing finish.
+              </li>
+            </ul>
+          </div>
+
+          <div id="why-choose-manago-interior" className="flex flex-col gap-2">
+            <p className="text-xl font-semibold">
+              Why Choose Manago Interior?{" "}
+            </p>
+
+            <ul className="list-disc list-outside pl-6  text-base leading-relaxed">
+              <li>
+                <span className="font-semibold">
+                  Experienced Professionals:
+                </span>{" "}
+                Our team brings years of experience in the hospitality industry,
+                ensuring you receive informed and innovative design solutions.
+              </li>
+              <li>
+                <span className="font-semibold">Customized Solutions:</span> We
+                understand that each client and project is unique. We tailor our
+                services to meet your specific needs and preferences.
+              </li>
+              <li>
+                <span className="font-semibold">Client Collaboration:</span> We
+                believe in working closely with our clients throughout the
+                process. Your satisfaction is our top priority, and we welcome
+                your input and feedback to create the ideal space.
+              </li>
+              <li>
+                <span className="font-semibold">Attention to Detail:</span> We
+                pride ourselves on our meticulous approach to design and
+                construction, ensuring that every element is crafted to
+                perfection.
+              </li>
+            </ul>
+          </div>
+
+          <div id="portfolio" className="flex flex-col gap-2">
+            <p className="text-xl font-semibold">
+              Portfolio (History of Manago Interior) :
+            </p>
+            <p className="text-base leading-relaxed">
+              Take a glimpse at our previous work to see how we’ve transformed
+              various spaces. Our portfolio showcases a wide array of successful
+              projects, highlighting our versatility, creativity, and dedication
+              to quality. (Include images or links to your portfolio)
+            </p>
+            <img src={portfolio.src} alt="portfolio" />
+          </div>
+
+          <div className="mt-4">
+            <p className="text-base font-semibold leading-relaxed ">
+              Call for free consultation and customisation : 7727072790{" "}
+            </p>
+            <p className="text-base font-semibold leading-relaxed mt-2">
+              Feel free to customize any section to better fit your brand’s
+              voice and style!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className=" flex-col gap-8 md:flex hidden">
+        <div>
+          <p className="text-xl font-semibold">More Services :</p>
+          <div className="flex flex-col gap-3 mt-2 py-1 border-l-2 border-[#A8A8A8]">
+            {moreServices.map((service, index) => (
+              <Link
+                key={index}
+                href={service.link}
+                className="flex flex-row items-center gap-2 px-3"
+              >
+                <p className="text-sm">{service.title}</p>
+                <SquareArrowOutUpRight className="w-4 h-4" />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <p className="text-xl font-semibold">More Services :</p>
+          <div className="flex flex-col gap-3 mt-2 py-1 border-l-2 border-[#A8A8A8]">
+            {pageHeaders.map((service, index) => (
+              <div key={index} className="flex flex-col gap-2 px-3">
+                <Link href={service.id} className="text-sm">
+                  {service.title}
+                </Link>
+                {service.subSections && (
+                  <ul className="pl-4 leading-relaxed">
+                    {service.subSections.map((subSection, subIndex) => (
+                      <li key={subIndex}>
+                        <Link href={subSection.id} className="text-sm">
+                          {subSection.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const moreServices = [
+  {
+    title: "Restoestate",
+    link: "/our-services/restoestate",
+  },
+  {
+    title: "Interior",
+    link: "/our-services/interior",
+  },
+  {
+    title: "Sign Board",
+    link: "/our-services/signboard",
+  },
+  {
+    title: "Kitchen Equipment",
+    link: "/our-services/kitchen-equipment",
+  },
+  {
+    title: "Furniture",
+    link: "/our-services/furniture",
+  },
+  {
+    title: "Manpower",
+    link: "/our-services/manpower",
+  },
+  {
+    title: "Uniforms",
+    link: "/our-services/uniforms",
+  },
+];
+
+const pageHeaders = [
+  {
+    title: "Introduction",
+    id: "#introduction",
+  },
+  {
+    title: "Licenses Required To Start Food Business In India",
+    id: "#licenses-required",
+  },
+  {
+    title: "Here’s What Manago Offers",
+    id: "#manago-offers",
+  },
+  {
+    title: "Food License",
+    id: "#food-license",
+  },
+  {
+    title: "Trade License/Eating House License",
+    id: "#trade-license",
+  },
+  {
+    title: "Liquor License",
+    id: "#liquor-license",
+  },
+  {
+    title: "Fire Department NOC",
+    id: "#fire-department-noc",
+  },
+  {
+    title: "Shops and Establishment Registration",
+    id: "#shops-and-establishment-registration",
+  },
+  {
+    title: "Pollution clearance",
+    id: "#pollution-clearance",
+  },
+  {
+    title: "License for playing music or videos",
+    id: "#license-for-playing-music-or-videos",
+  },
+  {
+    title: "Tax registrations",
+    id: "#tax-registrations",
+    subSections: [
+      { title: "Income Tax", id: "#income-tax" },
+      {
+        title: "GST (Goods and Service Tax)",
+        id: "#gst-goods-and-service-tax",
+      },
+      { title: "Professional Tax", id: "#professional-tax" },
+    ],
+  },
+  {
+    title: "Labour law Registrations",
+    id: "#labour-law-registrations",
+  },
+  {
+    title: "Infrastructure Licenses",
+    id: "#infrastructure-licenses",
+  },
+];
