@@ -63,11 +63,11 @@ export default function blog() {
             tailored specifically for the vibrant hospitality industry.
           </p>
 
-          <div className="grid grid-cols-3 gap-3 bg-[#F2ECDC] p-4 ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 bg-[#F2ECDC] p-4 ">
             <div className="flex flex-col justify-center items-center bg-white text-black p-5 rounded-lg">
               <CalendarDays className="w-10 h-10" />
               <p className="text-2xl leading-relaxed font-bold"><CountUp end={5} duration={5} />yrs+</p>
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed text-center">
                 In Bangalore Hospitality
               </p>
             </div>
@@ -75,7 +75,7 @@ export default function blog() {
             <div className="flex flex-col justify-center items-center bg-white text-black p-5 rounded-lg">
               <UsersRound className="w-10 h-10" />
               <p className="text-2xl leading-relaxed font-bold"><CountUp end={500} duration={5} />+</p>
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed text-center">
               Happy Clients
               </p>
             </div>
@@ -83,7 +83,7 @@ export default function blog() {
             <div className="flex flex-col justify-center items-center bg-white text-black p-5 rounded-lg">
               <UserRoundCheck className="w-10 h-10" />
               <p className="text-2xl leading-relaxed font-bold"><CountUp end={5000} duration={5} />+</p>
-              <p className="text-sm leading-relaxed">
+              <p className="text-sm leading-relaxed text-center">
               Happy Candidates placed
               </p>
             </div>

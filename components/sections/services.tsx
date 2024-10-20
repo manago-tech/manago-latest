@@ -60,7 +60,9 @@ export default function Services() {
               </CardHeader>
               <CardContent className="p-0">
                 <div className="flex justify-between items-center mt-2 sm:mt-4 mb-1 sm:mb-2">
+                <Link href={card.href}>
                   <p className="text-2xl text-[23px] marcellus">{card.title}</p>
+                  </Link>
                   <div className="hidden md:flex space-x-2 items-center">
                     <Link href={card.links.facebook} passHref rel="noopener noreferrer" target="_blank">
                       <ImFacebook2 className="text-xl" />
@@ -148,7 +150,7 @@ const cardData = [
   },
   {
     title: "Kitchen Equipment",
-    href: "/our-services/kitchen",
+    href: "/our-services/kitchen-equipment",
     content:
       "Providing high-quality kitchen equipment tailored for commercial kitchens.",
     links: {
@@ -170,7 +172,7 @@ const cardData = [
     image: card6, 
   },
   {
-    title: "Manpower",
+    title: "Manpower & Training",
     href: "/our-services/manpower",
     content:
       "Supplying skilled manpower to drive excellence across Bangalore's hospitality industry.",

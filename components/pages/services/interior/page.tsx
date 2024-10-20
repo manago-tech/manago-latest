@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import image from "@/assets/services-page/blog-5.png";
+import image from "@/assets/services-page/blog-3.png";
 import portfolio from "@/assets/services-page/blog-3-portfolio.png";
 import steps from "@/assets/services-page/blog-3-steps.png";
 
