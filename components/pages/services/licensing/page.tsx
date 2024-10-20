@@ -196,7 +196,7 @@ export default function blog() {
             <p className="text-base leading-relaxed"></p>
             <ul className="list-disc list-inside pl-8 text-base leading-relaxed">
               <li id="income-tax">
-                <span className="text-xl font-semibold">Income Tax :</span>
+                <span className="text-xl font-medium">Income Tax :</span>
                 <p className="text-base leading-relaxed">
                   Every business, including the food industry, shall have a PAN
                   and TAN in the name of the business or in the name of the
@@ -211,7 +211,7 @@ export default function blog() {
                 </p>
               </li>
               <li id="gst-goods-and-service-tax">
-                <span className="text-xl font-semibold">
+                <span className="text-xl font-medium">
                   GST (Goods and Service Tax) :{" "}
                 </span>
                 <p className="text-base leading-relaxed">
@@ -224,7 +224,7 @@ export default function blog() {
                 </p>
               </li>
               <li id="professional-tax">
-                <span className="text-xl font-semibold">
+                <span className="text-xl font-medium">
                   Professional Tax :{" "}
                 </span>
                 <p className="text-base leading-relaxed">
@@ -254,7 +254,7 @@ export default function blog() {
             </p>
             <ul className="list-disc list-inside pl-8 text-base leading-relaxed">
               <li>
-                <span className="font-semibold">
+                <span className="font-medium">
                   Employees State Insurance registration 
                 </span>
                  is to be obtained by all establishments, including food
@@ -265,7 +265,7 @@ export default function blog() {
                 Exemption Certificate.
               </li>
               <li>
-                <span className="font-semibold">
+                <span className="font-medium">
                   Employees Provident Fund registration
                 </span>
                  is mandatory for food businesses having 20 or more persons (10
@@ -274,7 +274,7 @@ export default function blog() {
                 under EPF.
               </li>
               <li>
-                <span className="font-semibold">
+                <span className="font-medium">
                   Contract Labour Registration
                 </span>
                  will apply if you employ more than 20 workers under a

@@ -28,7 +28,7 @@ export default function blog() {
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">3D Signboards : </span>
+            <span className="font-medium">3D Signboards : </span>
             These signs provide an immersive, three-dimensional effect, giving
             your brand a bold, standout presence. The raised lettering or logos
             create depth, offering an impressive visual impact both during the
@@ -37,7 +37,7 @@ export default function blog() {
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">Lollipop Signboards : </span>
+            <span className="font-medium">Lollipop Signboards : </span>
             These vertical signs, often used for street advertising or
             wayfinding, grab attention from a distance. Placed strategically,
             they guide potential customers to your location with ease. Designed
@@ -46,7 +46,7 @@ export default function blog() {
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">3D Signboards : </span>
+            <span className="font-medium">3D Signboards : </span>
             These signs provide an immersive, three-dimensional effect, giving
             your brand a bold, standout presence. The raised lettering or logos
             create depth, offering an impressive visual impact both during the
@@ -61,26 +61,26 @@ export default function blog() {
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">Quality Craftsmanship : </span>
+            <span className="font-medium">Quality Craftsmanship : </span>
             We use only the best materials to ensure durability and longevity.
             Our signs are resistant to wear and tear from weather conditions,
             ensuring your business looks professional at all times.
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">Customization : </span>
+            <span className="font-medium">Customization : </span>
             Each signboard is tailored to your brand’s identity, ensuring a
             perfect match with your vision and style.
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">Professional Installation : </span>
+            <span className="font-medium">Professional Installation : </span>
             We provide full installation services to ensure that your signage is
             displayed in the most impactful way possible.
           </p>
 
           <p className="text-base mt-3">
-            <span className="font-semibold">End-to-End Service : </span>
+            <span className="font-medium">End-to-End Service : </span>
             From design to execution, we manage every step of the process, so
             you can focus on running your business while we handle the rest.
           </p>

@@ -99,25 +99,25 @@ export default function blog() {
 
             <ul className="list-disc list-outside pl-6  text-base leading-relaxed">
               <li>
-                <span className="font-semibold">
+                <span className="font-medium">
                   Experienced Professionals:
                 </span>{" "}
                 Our team brings years of experience in the hospitality industry,
                 ensuring you receive informed and innovative design solutions.
               </li>
               <li>
-                <span className="font-semibold">Customized Solutions:</span> We
+                <span className="font-medium">Customized Solutions:</span> We
                 understand that each client and project is unique. We tailor our
                 services to meet your specific needs and preferences.
               </li>
               <li>
-                <span className="font-semibold">Client Collaboration:</span> We
+                <span className="font-medium">Client Collaboration:</span> We
                 believe in working closely with our clients throughout the
                 process. Your satisfaction is our top priority, and we welcome
                 your input and feedback to create the ideal space.
               </li>
               <li>
-                <span className="font-semibold">Attention to Detail:</span> We
+                <span className="font-medium">Attention to Detail:</span> We
                 pride ourselves on our meticulous approach to design and
                 construction, ensuring that every element is crafted to
                 perfection.
