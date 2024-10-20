@@ -136,12 +136,12 @@ const moreServices = [
     link: "/our-services/licensing",
   },
   {
-    title: "Sign Board",
-    link: "/our-services/signboard",
+    title: "Interior",
+    link: "/our-services/interior",
   },
   {
-    title: "Kitchen Equipment",
-    link: "/our-services/kitchen-equipment",
+    title: "Sign Board",
+    link: "/our-services/signboard",
   },
   {
     title: "Furniture",
@@ -159,23 +159,12 @@ const moreServices = [
 
 const pageHeaders = [
   {
-    title: "Our Services",
-    id: "#our-services",
+    title: "Introduction",
+    id: "#introduction",
   },
   {
-    title: "2D & 3D Design",
-    id: "#2d-3d-design",
-  },
-  {
-    title: "Construction Services",
-    id: "#construction-services",
-  },
-  {
-    title: "Why Choose Manago Interior?",
-    id: "#why-choose-manago-interior",
-  },
-  {
-    title: "Portfolio (History of Manago Interior)",
-    id: "#portfolio",
+    title: "Why Opt for Manago Commercial Kitchen Equipment?",
+    id: "#why-opt-manago-commercial-kitchen-equipment",
   },
 ];
+
