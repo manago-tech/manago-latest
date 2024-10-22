@@ -515,7 +515,7 @@ const moreServices = [
   },
   {
     title: "Uniforms",
-    link: "/our-services/uniforms",
+    link: "/our-services/uniform"
   },
 ];
 
