@@ -29,7 +29,7 @@ import Ten from "@/assets/interior/10th.png";
 import Eleven from "@/assets/interior/11th.png";
 import Twelve from "@/assets/interior/12th.png";
 import Thirteen from "@/assets/interior/13th.png";
-import Fourteen from "@/assets/interior/14th.png";
+import Fourteen from "@/assets/interior/14th.png" ;
 
 export default function blog() {
   return (
