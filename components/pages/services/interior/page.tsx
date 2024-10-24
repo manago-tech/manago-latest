@@ -7,6 +7,30 @@ import steps from "@/assets/services-page/blog-3-steps.png";
 import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
+import One from "@/assets/interior/1.png";
+import Two from "@/assets/interior/2.png";
+import Three from "@/assets/interior/3.png";
+import Four from "@/assets/interior/4.png";
+import Five from "@/assets/interior/5.png";
+import Six from "@/assets/interior/6.png";
+import Seven from "@/assets/interior/7.png";
+import Eight from "@/assets/interior/8.png";
+import Nine from "@/assets/interior/9.png";
+import Ten from "@/assets/interior/10.png";
+import Eleven from "@/assets/interior/11.png";
+import Twelve from "@/assets/interior/12.png";
+import Thirteen from "@/assets/interior/13.png";
+import Fourteen from "@/assets/interior/14.png";
+
 export default function blog() {
   return (
     <div className="bg-[#F1EEE766] w-full gap-10 grid grid-cols-1 md:grid-cols-[70%_30%] px-7 sm:px-14 md:px-28 py-10">
@@ -99,9 +123,7 @@ export default function blog() {
 
             <ul className="list-disc list-outside pl-6  text-base leading-relaxed">
               <li>
-                <span className="font-medium">
-                  Experienced Professionals:
-                </span>{" "}
+                <span className="font-medium">Experienced Professionals:</span>{" "}
                 Our team brings years of experience in the hospitality industry,
                 ensuring you receive informed and innovative design solutions.
               </li>
@@ -133,9 +155,8 @@ export default function blog() {
               Take a glimpse at our previous work to see how we’ve transformed
               various spaces. Our portfolio showcases a wide array of successful
               projects, highlighting our versatility, creativity, and dedication
-              to quality. (Include images or links to your portfolio)
+              to quality.
             </p>
-            <img src={portfolio.src} alt="portfolio" />
           </div>
 
           <div className="mt-4">
@@ -146,6 +167,27 @@ export default function blog() {
               Feel free to customize any section to better fit your brand’s
               voice and style!
             </p>
+          </div>
+
+          <div className=" gap-1 grid grid-cols-7 grid-rows-2">
+            {images.map((image, index) => (
+              <Dialog key={index}>
+                <DialogTrigger className="mx-0 px-0">
+                  <img
+                    src={image.src.src}
+                    alt={image.alt}
+                    className="cursor-pointer col-span-7 row-span-2 "
+                  />
+                </DialogTrigger>
+                <DialogContent className="p-0 bg-transparent border-none h-full shadow-none flex justify-center items-center">
+                  <img
+                    src={image.src.src}
+                    alt={image.alt}
+                    className="lg:w-80 md:w-60 w-40 rounded-md"
+                  />
+                </DialogContent>
+              </Dialog>
+            ))}
           </div>
         </div>
       </div>
@@ -236,4 +278,21 @@ const pageHeaders = [
     title: "Portfolio (History of Manago Interior)",
     id: "#portfolio",
   },
+];
+
+const images = [
+  { src: One, alt: "Image One" },
+  { src: Two, alt: "Image Two" },
+  { src: Three, alt: "Image Three" },
+  { src: Four, alt: "Image Four" },
+  { src: Five, alt: "Image Five" },
+  { src: Six, alt: "Image Six" },
+  { src: Seven, alt: "Image Seven" },
+  { src: Eight, alt: "Image Eight" },
+  { src: Nine, alt: "Image Nine" },
+  { src: Ten, alt: "Image Ten" },
+  { src: Eleven, alt: "Image Eleven" },
+  { src: Twelve, alt: "Image Twelve" },
+  { src: Thirteen, alt: "Image Thirteen" },
+  { src: Fourteen, alt: "Image Fourteen" },
 ];
