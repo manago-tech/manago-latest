@@ -170,7 +170,7 @@ export default function blog() {
           </div>
 
           <div className=" gap-1 grid grid-cols-7 grid-rows-2">
-            {images.map((image, index) => (
+            {clickableImages.map((image, index) => (
               <Dialog key={index}>
                 <DialogTrigger className="mx-0 px-0">
                   <img
@@ -280,7 +280,7 @@ const pageHeaders = [
   },
 ];
 
-const images = [
+const clickableImages = [
   { src: One, alt: "Image One" },
   { src: Two, alt: "Image Two" },
   { src: Three, alt: "Image Three" },
