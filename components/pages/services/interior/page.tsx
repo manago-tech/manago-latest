@@ -16,20 +16,20 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-import One from "@/assets/interior/1.png";
-import Two from "@/assets/interior/2.png";
-import Three from "@/assets/interior/3.png";
-import Four from "@/assets/interior/4.png";
-import Five from "@/assets/interior/5.png";
-import Six from "@/assets/interior/6.png";
-import Seven from "@/assets/interior/7.png";
-import Eight from "@/assets/interior/8.png";
-import Nine from "@/assets/interior/9.png";
-import Ten from "@/assets/interior/10.png";
-import Eleven from "@/assets/interior/11.png";
-import Twelve from "@/assets/interior/12.png";
-import Thirteen from "@/assets/interior/13.png";
-import Fourteen from "@/assets/interior/14.png";
+import One from "@/assets/interior/1st.png";
+import Two from "@/assets/interior/2nd.png";
+import Three from "@/assets/interior/3rd.png";
+import Four from "@/assets/interior/4th.png";
+import Five from "@/assets/interior/5th.png";
+import Six from "@/assets/interior/6th.png";
+import Seven from "@/assets/interior/7th.png";
+import Eight from "@/assets/interior/8th.png";
+import Nine from "@/assets/interior/9th.png";
+import Ten from "@/assets/interior/10th.png";
+import Eleven from "@/assets/interior/11th.png";
+import Twelve from "@/assets/interior/12th.png";
+import Thirteen from "@/assets/interior/13th.png";
+import Fourteen from "@/assets/interior/14th.png";
 
 export default function blog() {
   return (
