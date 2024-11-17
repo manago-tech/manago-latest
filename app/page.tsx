@@ -5,6 +5,7 @@ import Testimonials from "@/components/sections/testimonials";
 import Team from "@/components/sections/team";
 import Success from "@/components/sections/success";
 import Footer from "@/components/sections/footer";
+import Map from "@/components/sections/map";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <Separator className="max-w-40 sm:max-w-sm md:max-w-lg" />
       </div>
       <Success />
+      <Map />
       <Footer />
     </main>
   );
